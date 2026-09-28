@@ -36,35 +36,46 @@ THRESHOLD = 0.82
 CACHE = PROJECT_ROOT / "data" / "interim" / "exp001"
 EXP4_DIR = PROJECT_ROOT / "experiments" / "EXP-004"
 
-# Windows memory tracking
-psapi = ctypes.windll.psapi
-kernel32 = ctypes.windll.kernel32
+# Cross-platform memory tracking
+HAS_WINDLL = hasattr(ctypes, "windll")
+if HAS_WINDLL:
+    psapi = ctypes.windll.psapi
+    kernel32 = ctypes.windll.kernel32
 
+    class PMC(ctypes.Structure):
+        _fields_ = [
+            ("cb", wintypes.DWORD),
+            ("PageFaultCount", wintypes.DWORD),
+            ("PeakWorkingSetSize", ctypes.c_size_t),
+            ("WorkingSetSize", ctypes.c_size_t),
+            ("QuotaPeakPagedPoolUsage", ctypes.c_size_t),
+            ("QuotaPagedPoolUsage", ctypes.c_size_t),
+            ("QuotaPeakNonPagedPoolUsage", ctypes.c_size_t),
+            ("QuotaNonPagedPoolUsage", ctypes.c_size_t),
+            ("PagefileUsage", ctypes.c_size_t),
+            ("PeakPagefileUsage", ctypes.c_size_t),
+        ]
 
-class PMC(ctypes.Structure):
-    _fields_ = [
-        ("cb", wintypes.DWORD),
-        ("PageFaultCount", wintypes.DWORD),
-        ("PeakWorkingSetSize", ctypes.c_size_t),
-        ("WorkingSetSize", ctypes.c_size_t),
-        ("QuotaPeakPagedPoolUsage", ctypes.c_size_t),
-        ("QuotaPagedPoolUsage", ctypes.c_size_t),
-        ("QuotaPeakNonPagedPoolUsage", ctypes.c_size_t),
-        ("QuotaNonPagedPoolUsage", ctypes.c_size_t),
-        ("PagefileUsage", ctypes.c_size_t),
-        ("PeakPagefileUsage", ctypes.c_size_t),
-    ]
-
-
-psapi.GetProcessMemoryInfo.argtypes = [wintypes.HANDLE, ctypes.POINTER(PMC), wintypes.DWORD]
-psapi.GetProcessMemoryInfo.restype = wintypes.BOOL
+    psapi.GetProcessMemoryInfo.argtypes = [wintypes.HANDLE, ctypes.POINTER(PMC), wintypes.DWORD]
+    psapi.GetProcessMemoryInfo.restype = wintypes.BOOL
+else:
+    psapi = None
+    kernel32 = None
 
 
 def get_ram_mb():
-    pmc = PMC()
-    pmc.cb = ctypes.sizeof(PMC)
-    psapi.GetProcessMemoryInfo(kernel32.GetCurrentProcess(), ctypes.byref(pmc), pmc.cb)
-    return pmc.WorkingSetSize / (1024 * 1024), pmc.PeakWorkingSetSize / (1024 * 1024)
+    if HAS_WINDLL and psapi and kernel32:
+        pmc = PMC()
+        pmc.cb = ctypes.sizeof(PMC)
+        psapi.GetProcessMemoryInfo(kernel32.GetCurrentProcess(), ctypes.byref(pmc), pmc.cb)
+        return pmc.WorkingSetSize / (1024 * 1024), pmc.PeakWorkingSetSize / (1024 * 1024)
+    try:
+        import resource
+
+        rss = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024.0
+        return rss, rss
+    except Exception:
+        return 0.0, 0.0
 
 
 def process_country_partition(country_name, s1_country_df, clf):
