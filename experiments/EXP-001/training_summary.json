@@ -1,0 +1,16 @@
+{
+  "algorithm": "HistGradientBoostingClassifier",
+  "train_samples": 407500,
+  "train_features": 22,
+  "positives": 157793,
+  "negatives": 249707,
+  "training_time_seconds": 3.04,
+  "model_config": {
+    "algorithm": "HistGradientBoostingClassifier",
+    "random_state": 42,
+    "max_depth": 6,
+    "max_iter": 100,
+    "early_stopping": "auto",
+    "scoring": "loss"
+  }
+}

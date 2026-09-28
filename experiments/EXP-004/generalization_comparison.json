@@ -1,0 +1,37 @@
+{
+  "exp003_reference": {
+    "macro_f0_5": 0.91894,
+    "macro_precision": 0.95904,
+    "macro_recall": 0.8426,
+    "tp": 288633,
+    "fp": 6788,
+    "total_fn": 57305,
+    "reachable_model_fn": 37060,
+    "threshold": 0.84
+  },
+  "exp004_result": {
+    "macro_f0_5": 0.92237,
+    "macro_precision": 0.96012,
+    "macro_recall": 0.85047,
+    "tp": 291517,
+    "fp": 7040,
+    "total_fn": 54421,
+    "reachable_model_fn": 34176,
+    "threshold": 0.82
+  },
+  "deltas": {
+    "f0_5_delta": 0.00343,
+    "precision_delta": 0.00108,
+    "recall_delta": 0.00787,
+    "tp_delta": 2884,
+    "fp_delta": 252,
+    "total_fn_delta": -2884,
+    "reachable_model_fn_delta": -2884
+  },
+  "generalization": {
+    "stepping_stone_10k_gain": 0.00288,
+    "full_100k_gain": 0.00343,
+    "generalized": true,
+    "champion": "EXP-004"
+  }
+}

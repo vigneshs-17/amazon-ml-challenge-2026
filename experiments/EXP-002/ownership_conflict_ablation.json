@@ -1,0 +1,23 @@
+{
+  "contested_candidate_ids": 451,
+  "total_links_in_conflicts": 967,
+  "true_links_in_conflicts": 188,
+  "false_links_in_conflicts": 779,
+  "independent": {
+    "macro_f0_5": 0.89864,
+    "macro_precision": 0.94627,
+    "macro_recall": 0.81307,
+    "tp": 277776,
+    "fp": 8446
+  },
+  "unique_owner": {
+    "macro_f0_5": 0.89927,
+    "macro_precision": 0.94713,
+    "macro_recall": 0.81287,
+    "tp": 277702,
+    "fp": 8004
+  },
+  "f0_5_delta": 0.00063,
+  "fp_reduction": 442,
+  "tp_loss": 74
+}

@@ -1,0 +1,89 @@
+{
+  "train_s1": {
+    "header": [
+      "entity_id",
+      "business_name",
+      "business_address",
+      "country"
+    ],
+    "field_count_distribution": {
+      "4": 2206821
+    },
+    "contains_double_quote": 4,
+    "bad_examples": []
+  },
+  "train_s2": {
+    "header": [
+      "entity_id",
+      "business_name",
+      "business_address",
+      "country"
+    ],
+    "field_count_distribution": {
+      "4": 5034616
+    },
+    "contains_double_quote": 6,
+    "bad_examples": []
+  },
+  "train_s3": {
+    "header": [
+      "entity_id",
+      "business_name",
+      "business_address",
+      "country"
+    ],
+    "field_count_distribution": {
+      "4": 5285603
+    },
+    "bad_examples": []
+  },
+  "test_s1": {
+    "header": [
+      "entity_id",
+      "business_name",
+      "business_address",
+      "country"
+    ],
+    "field_count_distribution": {
+      "4": 1732544
+    },
+    "contains_double_quote": 134,
+    "bad_examples": []
+  },
+  "test_s2": {
+    "header": [
+      "entity_id",
+      "business_name",
+      "business_address",
+      "country"
+    ],
+    "field_count_distribution": {
+      "4": 4887273
+    },
+    "contains_double_quote": 349,
+    "bad_examples": []
+  },
+  "test_s3": {
+    "header": [
+      "entity_id",
+      "business_name",
+      "business_address",
+      "country"
+    ],
+    "field_count_distribution": {
+      "4": 5082316
+    },
+    "contains_double_quote": 330,
+    "bad_examples": []
+  },
+  "ground_truth": {
+    "header": [
+      "source1_entity_id",
+      "matched_entity_ids"
+    ],
+    "field_count_distribution": {
+      "2": 2206821
+    },
+    "bad_examples": []
+  }
+}

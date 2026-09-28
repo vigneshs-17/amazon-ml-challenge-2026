@@ -1,0 +1,36 @@
+{
+  "baseline_variant": "V0_Control",
+  "best_variant": "V2_Tolerant_Numeric",
+  "baseline_macro_f05": 0.91527,
+  "best_macro_f05": 0.91815,
+  "f05_gain_over_control": 0.00288,
+  "precision_comparison": {
+    "baseline": 0.95665,
+    "best": 0.95742,
+    "delta": 0.00077
+  },
+  "recall_comparison": {
+    "baseline": 0.83637,
+    "best": 0.84439,
+    "delta": 0.00802
+  },
+  "true_positives": {
+    "baseline": 28747,
+    "best": 29046,
+    "net_tp_gain": 299,
+    "new_tp_recovered": 577,
+    "previous_tp_lost": 278
+  },
+  "false_positives": {
+    "baseline": 703,
+    "best": 743,
+    "net_fp_change": 40,
+    "new_fp_introduced": 217,
+    "previous_fp_eliminated": 177
+  },
+  "specific_fn_categories_recovered": {
+    "numeric_or_postal_disagreement_recovered": 151,
+    "name_strong_address_weak_recovered": 28,
+    "name_weak_address_strong_recovered": 67
+  }
+}

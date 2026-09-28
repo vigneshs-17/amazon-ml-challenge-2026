@@ -1,0 +1,38 @@
+{
+ "seed": 42,
+ "target_val_size": 100000,
+ "actual_val_size": 100000,
+ "train_remaining_size": 2106821,
+ "val_country_dist": {
+  "US": 59981,
+  "India": 40019
+ },
+ "full_country_dist": {
+  "US": 1323633,
+  "India": 883188
+ },
+ "val_singleton_pct": 5.584,
+ "full_singleton_pct": 5.585,
+ "val_match_count_hist": {
+  "0": 5584,
+  "1": 5400,
+  "2": 17003,
+  "3": 24049,
+  "4": 22063,
+  "5": 14472,
+  "6": 7511,
+  "7": 2870,
+  "8": 843,
+  "9": 179,
+  "10": 24,
+  "11": 2
+ },
+ "val_bucket_dist": {
+  "0": 5584,
+  "1": 5400,
+  "2": 17003,
+  "3": 72013
+ },
+ "val_true_link_count": 345938,
+ "no_overlap_check": true
+}

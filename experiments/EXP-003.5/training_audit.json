@@ -1,0 +1,19 @@
+{
+  "training_s1_count": 100000,
+  "total_pairs": 913717,
+  "positive_count": 314757,
+  "negative_count": 598960,
+  "negative_to_positive_ratio": 1.903,
+  "hard_positives_count": 76271,
+  "hard_positives_pct_of_positives": 24.23,
+  "easy_positives_count": 238486,
+  "easy_positives_pct_of_positives": 75.77,
+  "hard_negatives_count": 376682,
+  "hard_negatives_pct_of_negatives": 62.89,
+  "easy_negatives_count": 222278,
+  "easy_negatives_pct_of_negatives": 37.11,
+  "key_findings": {
+    "positive_imbalance": "75.77% of training positives are straightforward high-similarity matches. The 24.23% hard positives (cross-script, numeric conflict, asymmetric overlap) receive equal weight and are overwhelmed by easier positive gradients.",
+    "negative_hardness": "50.8% of training negatives already have high name or address similarity (hard negatives). However, Formula 2 retrieves even harder candidates into Cap-200 on validation."
+  }
+}

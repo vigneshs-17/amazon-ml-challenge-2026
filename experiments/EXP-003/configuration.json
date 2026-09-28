@@ -1,0 +1,12 @@
+{
+  "experiment_id": "EXP-003",
+  "retrieval": "B5 Blocker (name+addr rare-1 union, soft-country fallback)",
+  "ranking_formula": "Formula 2 (log token-IDF + postal match + cross-field corroboration + length Jaccard)",
+  "candidate_cap": 200,
+  "features": "42 features (Token-IDF, Char N-grams, Address Structure, Cross-Field)",
+  "model_architecture": "HistGradientBoostingClassifier(max_depth=None, max_leaf_nodes=127, min_samples_leaf=20, max_iter=150, l2_regularization=2.0)",
+  "training_data": "experiments/EXP-002/train_X.npy (913,717 rows, 42 features from 100k S1)",
+  "validation_data": "100,000 stratified S1 entities (345,938 ground-truth links)",
+  "conflict_resolution": "Unique-Owner greedy probability resolution",
+  "seed": 2026
+}

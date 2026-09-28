@@ -1,0 +1,57 @@
+{
+  "experiment_id": "EXP-002",
+  "description": "EXP-002 Matcher: 42 features (Token IDF, Char N-grams, Address Structure, Cross-Field) + HistGradientBoosting on 100k S1",
+  "validation_split": "100k_stratified_s1",
+  "candidate_cap": 200,
+  "candidate_pairs_scored": 18558349,
+  "best_threshold": 0.78,
+  "unique_owner_applied": true,
+  "official_macro_f0_5": 0.89927,
+  "macro_precision": 0.94713,
+  "macro_recall": 0.81287,
+  "f0_5_singletons": 0.92819,
+  "f0_5_non_singletons": 0.89756,
+  "tp": 277702,
+  "fp": 8004,
+  "fn": 68236,
+  "blocking_recall": 0.95491,
+  "cap200_recall": 0.91034,
+  "runtimes": {
+    "model_train_seconds": 6.7,
+    "scoring_seconds": 5655.1,
+    "total_job_seconds": 7960.9
+  },
+  "error_breakdown": {
+    "total_ground_truth_links": 345938,
+    "A_raw_b5_blocking_miss": 15599,
+    "B_cap200_pruning_miss": 15418,
+    "C_model_false_negative_miss": 37219,
+    "D_model_false_positive": 8004,
+    "true_positives": 277702,
+    "best_threshold": 0.78,
+    "unique_owner_applied": true
+  },
+  "conflict_ablation": {
+    "contested_candidate_ids": 451,
+    "total_links_in_conflicts": 967,
+    "true_links_in_conflicts": 188,
+    "false_links_in_conflicts": 779,
+    "independent": {
+      "macro_f0_5": 0.89864,
+      "macro_precision": 0.94627,
+      "macro_recall": 0.81307,
+      "tp": 277776,
+      "fp": 8446
+    },
+    "unique_owner": {
+      "macro_f0_5": 0.89927,
+      "macro_precision": 0.94713,
+      "macro_recall": 0.81287,
+      "tp": 277702,
+      "fp": 8004
+    },
+    "f0_5_delta": 0.00063,
+    "fp_reduction": 442,
+    "tp_loss": 74
+  }
+}

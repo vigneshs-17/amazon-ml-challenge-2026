@@ -1,0 +1,9 @@
+{
+ "s2_ids_in_ground_truth": 3693619,
+ "s2_ids_with_multiple_s1_owners": 0,
+ "s2_max_s1_owners_for_one_id": 1,
+ "s3_ids_in_ground_truth": 3944746,
+ "s3_ids_with_multiple_s1_owners": 0,
+ "s3_max_s1_owners_for_one_id": 1,
+ "conclusion": "In train_ground_truth.tsv every S2/S3 id that appears is owned by exactly one S1 entity (verified exhaustively above). This is an artifact of how the labeled training set was constructed, not a rule stated in README.md. The test set carries no ground truth, so this cannot be checked there, and our candidate generation / matching model must not assume it (a record could legitimately be closest to more than one S1 entity; conflict resolution, if any, should be validated experimentally rather than hard-coded)."
+}

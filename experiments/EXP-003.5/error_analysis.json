@@ -1,0 +1,1129 @@
+{
+  "benchmark_sample_size": 10000,
+  "total_true_links": 34650,
+  "cap200_retained_true_links": 32531,
+  "cap200_candidate_recall": 0.93885,
+  "operating_threshold": 0.84,
+  "confusion_counts": {
+    "TP": 28877,
+    "FN": 3654,
+    "FP": 797
+  },
+  "fn_probability_buckets": {
+    "total_reachable_fn": 3654,
+    "threshold": 0.84,
+    "counts": {
+      "<0.10": 255,
+      "0.10-0.30": 525,
+      "0.30-0.50": 583,
+      "0.50-0.70": 900,
+      "0.70-0.80": 962,
+      "0.80-0.84": 427,
+      ">=0.84_conflict_loss": 2
+    },
+    "percentages": {
+      "<0.10": 6.98,
+      "0.10-0.30": 14.37,
+      "0.30-0.50": 15.96,
+      "0.50-0.70": 24.63,
+      "0.70-0.80": 26.33,
+      "0.80-0.84": 11.69,
+      ">=0.84_conflict_loss": 0.05
+    },
+    "summary": "Distribution indicates whether misses are near-misses (close to threshold) or severe feature divergence (sub-0.10)."
+  },
+  "hard_positive_clusters": {
+    "counts": {
+      "transliteration_script_divergence": 214,
+      "severe_name_corruption": 80,
+      "severe_address_corruption": 22,
+      "name_weak_address_strong": 522,
+      "name_strong_address_weak": 661,
+      "numeric_or_postal_disagreement": 906,
+      "short_or_generic_business_name": 56,
+      "missing_field": 0,
+      "token_order_or_squashing_issue": 29,
+      "candidate_rank_tail": 6,
+      "near_miss_probability_80_84": 388,
+      "other": 770
+    },
+    "percentages": {
+      "transliteration_script_divergence": 5.86,
+      "severe_name_corruption": 2.19,
+      "severe_address_corruption": 0.6,
+      "name_weak_address_strong": 14.29,
+      "name_strong_address_weak": 18.09,
+      "numeric_or_postal_disagreement": 24.79,
+      "short_or_generic_business_name": 1.53,
+      "missing_field": 0.0,
+      "token_order_or_squashing_issue": 0.79,
+      "candidate_rank_tail": 0.16,
+      "near_miss_probability_80_84": 10.62,
+      "other": 21.07
+    },
+    "representative_samples": {
+      "transliteration_script_divergence": [
+        {
+          "s1_id": "S1-619314161",
+          "cand_id": "S3-60551644",
+          "prob": 0.8358,
+          "rank": 10,
+          "s1_name": "real investments private limited",
+          "cand_name": "\u0930\u093f\u092f\u0932 \u0907\u0928\u094d\u0935\u0947\u0938\u094d\u091f\u092e\u0947\u0902\u091f\u094d\u0938 \u092a\u094d\u0930\u093e\u0907\u0935\u0947\u091f \u0932\u093f\u092e\u093f\u091f\u0947\u0921",
+          "s1_addr": "8 khasra no 914 manas nagar kanpur road lucknow uttar pradesh",
+          "cand_addr": "no 8 khasra no 914 manas nagar lucknow up",
+          "name_ratio": 8.82,
+          "addr_ratio": 74.51,
+          "name_jacc": 0.0,
+          "addr_jacc": 0.58
+        },
+        {
+          "s1_id": "S1-326497906",
+          "cand_id": "S2-236595927",
+          "prob": 0.5712,
+          "rank": 14,
+          "s1_name": "al global private limited",
+          "cand_name": "\u0905\u0932 \u0917\u094d\u0932\u094b\u092c\u0932 \u092a\u094d\u0930\u093e\u0907\u0935\u0947\u091f \u0932\u093f\u092e\u093f\u091f\u0947\u0921",
+          "s1_addr": "ho no 02 gali no 01 siddharth nagar satna madhya pradesh",
+          "cand_addr": "ho no 02 4 satna madhya pradesh",
+          "name_ratio": 11.76,
+          "addr_ratio": 68.97,
+          "name_jacc": 0.0,
+          "addr_jacc": 0.55
+        },
+        {
+          "s1_id": "S1-967056839",
+          "cand_id": "S2-694353101",
+          "prob": 0.6895,
+          "rank": 4,
+          "s1_name": "life projects private limited",
+          "cand_name": "\u0932\u093e\u0907\u092b \u092a\u094d\u0930\u094b\u091c\u0947\u0915\u094d\u091f\u094d\u0938 \u092a\u094d\u0930\u093e\u0907\u0935\u0947\u091f \u0932\u093f\u092e\u093f\u091f\u0947\u0921",
+          "s1_addr": "201 202 203 khar west mumbai mangal bhavna junction of 14th road maharashtra",
+          "cand_addr": "01 202 203 mangal bhavna junction of 14th road khar west mumbai \u092e\u0939\u093e\u0930\u093e\u0937\u094d\u091f\u094d\u0930",
+          "name_ratio": 9.68,
+          "addr_ratio": 70.67,
+          "name_jacc": 0.0,
+          "addr_jacc": 0.73
+        },
+        {
+          "s1_id": "S1-225136075",
+          "cand_id": "S2-440203789",
+          "prob": 0.8199,
+          "rank": 3,
+          "s1_name": "jay media pvt ltd",
+          "cand_name": "\u091c\u092f \u092e\u0940\u0921\u093f\u092f\u093e \u092a\u094d\u0930\u093e \u0932\u093f",
+          "s1_addr": "1730 2 kotla mubarakpur new delhi south delhi delhi",
+          "cand_addr": "1730 2 kotla mubarakpur new delhi south delhi delhi",
+          "name_ratio": 17.65,
+          "addr_ratio": 100.0,
+          "name_jacc": 0.0,
+          "addr_jacc": 1.0
+        },
+        {
+          "s1_id": "S1-225136075",
+          "cand_id": "S2-10256496",
+          "prob": 0.806,
+          "rank": 6,
+          "s1_name": "jay media pvt ltd",
+          "cand_name": "\u091c\u092f \u092e\u0940\u0921\u093f\u092f\u093e \u092a\u094d\u0930\u093e \u0932\u093f",
+          "s1_addr": "1730 2 kotla mubarakpur new delhi south delhi delhi",
+          "cand_addr": "door no 1730 2 kotla mubarakpur new delhi south delhi delhi",
+          "name_ratio": 17.65,
+          "addr_ratio": 92.73,
+          "name_jacc": 0.0,
+          "addr_jacc": 0.78
+        }
+      ],
+      "severe_name_corruption": [
+        {
+          "s1_id": "S1-711682948",
+          "cand_id": "S3-834342742",
+          "prob": 0.6808,
+          "rank": 27,
+          "s1_name": "catherine nesbit industries llc",
+          "cand_name": "halowexveo",
+          "s1_addr": "2 stonegate court fairfield oh",
+          "cand_addr": "2 stonegate ct fairfield ohio",
+          "name_ratio": 14.63,
+          "addr_ratio": 91.53,
+          "name_jacc": 0.0,
+          "addr_jacc": 0.43
+        },
+        {
+          "s1_id": "S1-90406410",
+          "cand_id": "S2-679115769",
+          "prob": 0.6983,
+          "rank": 3,
+          "s1_name": "white care llp",
+          "cand_name": "\u0d35\u0d48\u0d31\u0d4d\u0d31\u0d4d \u0d15\u0d46\u0d2f\u0d7c \u0d0e\u0d7d\u0d0e\u0d7d\u0d2a\u0d3f",
+          "s1_addr": "ka14 391 393 kannothumchal p o chovva kannur kerala",
+          "cand_addr": "block e 290 ka14 391 393 kannothumchal kannur \u0d15\u0d47\u0d30\u0d33\u0d02",
+          "name_ratio": 12.5,
+          "addr_ratio": 66.67,
+          "name_jacc": 0.0,
+          "addr_jacc": 0.38
+        },
+        {
+          "s1_id": "S1-936921482",
+          "cand_id": "S3-899036156",
+          "prob": 0.7969,
+          "rank": 23,
+          "s1_name": "clean petroleum",
+          "cand_name": "synkor",
+          "s1_addr": "915 franklin road charlotte tn",
+          "cand_addr": "915 franklin rd charlotte tennessee",
+          "name_ratio": 19.05,
+          "addr_ratio": 86.15,
+          "name_jacc": 0.0,
+          "addr_jacc": 0.43
+        },
+        {
+          "s1_id": "S1-242154299",
+          "cand_id": "S3-68996719",
+          "prob": 0.6031,
+          "rank": 7,
+          "s1_name": "dwarkadhish star pvt ltd",
+          "cand_name": "evogild",
+          "s1_addr": "29 sangamvihar jansath road muzaffarnagar uttar pradesh",
+          "cand_addr": "door no 418 29 sangamvihar jansath road muzaffarnagar up",
+          "name_ratio": 19.35,
+          "addr_ratio": 79.28,
+          "name_jacc": 0.0,
+          "addr_jacc": 0.45
+        },
+        {
+          "s1_id": "S1-282919455",
+          "cand_id": "S3-796611443",
+          "prob": 0.6365,
+          "rank": 153,
+          "s1_name": "north enterprises private limited",
+          "cand_name": "\u0ca8\u0cbe\u0cb0\u0ccd\u0ca4\u0ccd \u0c8e\u0c82\u0c9f\u0cb0\u0ccd\u200c\u0caa\u0ccd\u0cb0\u0cc8\u0cb8\u0cb8\u0ccd \u0caa\u0ccd\u0cb0\u0cc8\u0cb5\u0cc7\u0c9f\u0ccd \u0cb2\u0cbf\u0cae\u0cbf\u0c9f\u0cc6\u0ca1\u0ccd",
+          "s1_addr": "obeya gusto part of ground floor office a no l 367 5th main rd sector 6 bangalore south bangalore karnataka",
+          "cand_addr": "\u0c95\u0cb0\u0ccd\u0ca8\u0cbe\u0c9f\u0c95 bangalore obeya gusto bangalore south",
+          "name_ratio": 8.45,
+          "addr_ratio": 40.79,
+          "name_jacc": 0.0,
+          "addr_jacc": 0.2
+        }
+      ],
+      "severe_address_corruption": [
+        {
+          "s1_id": "S1-308240187",
+          "cand_id": "S3-377116427",
+          "prob": 0.5441,
+          "rank": 112,
+          "s1_name": "lb xrp",
+          "cand_name": "lb partners",
+          "s1_addr": "3118 soaring pines trail conroe tx",
+          "cand_addr": "",
+          "name_ratio": 47.06,
+          "addr_ratio": 0.0,
+          "name_jacc": 0.33,
+          "addr_jacc": 0.0
+        },
+        {
+          "s1_id": "S1-129409679",
+          "cand_id": "S3-354134985",
+          "prob": 0.2609,
+          "rank": 41,
+          "s1_name": "barbey johnson d o",
+          "cand_name": "barbey barbey j0hnson d 0",
+          "s1_addr": "in gary 2324 durbin street",
+          "cand_addr": "",
+          "name_ratio": 74.42,
+          "addr_ratio": 0.0,
+          "name_jacc": 0.33,
+          "addr_jacc": 0.0
+        },
+        {
+          "s1_id": "S1-523130023",
+          "cand_id": "S2-493747616",
+          "prob": 0.4075,
+          "rank": 20,
+          "s1_name": "w s staked pllc",
+          "cand_name": "w and s staked p l l c",
+          "s1_addr": "mo 303 logan street palmyra",
+          "cand_addr": "",
+          "name_ratio": 81.08,
+          "addr_ratio": 0.0,
+          "name_jacc": 0.38,
+          "addr_jacc": 0.0
+        },
+        {
+          "s1_id": "S1-455118611",
+          "cand_id": "S3-31901937",
+          "prob": 0.6006,
+          "rank": 80,
+          "s1_name": "smita services group",
+          "cand_name": "sri smita services company",
+          "s1_addr": "a 1 shilp residency opp kailash flat silver palace hotel hirawadi ahmedabad gujarat",
+          "cand_addr": "",
+          "name_ratio": 73.91,
+          "addr_ratio": 0.0,
+          "name_jacc": 0.4,
+          "addr_jacc": 0.0
+        },
+        {
+          "s1_id": "S1-895480602",
+          "cand_id": "S3-71785390",
+          "prob": 0.6939,
+          "rank": 87,
+          "s1_name": "peridan brighthouse",
+          "cand_name": "peridan center",
+          "s1_addr": "9080 swarner drive beaumont tx",
+          "cand_addr": "",
+          "name_ratio": 60.61,
+          "addr_ratio": 0.0,
+          "name_jacc": 0.33,
+          "addr_jacc": 0.0
+        }
+      ],
+      "name_weak_address_strong": [
+        {
+          "s1_id": "S1-603442937",
+          "cand_id": "S2-285957614",
+          "prob": 0.3314,
+          "rank": 2,
+          "s1_name": "skill agro private limited",
+          "cand_name": "calonexflux",
+          "s1_addr": "3 101 shree krishan avenyu face limbodi indore madhya pradesh",
+          "cand_addr": "3 101 shree krishan avenyu face indore madhya pradesh",
+          "name_ratio": 21.62,
+          "addr_ratio": 92.98,
+          "name_jacc": 0.0,
+          "addr_jacc": 0.9
+        },
+        {
+          "s1_id": "S1-558011533",
+          "cand_id": "S3-719402044",
+          "prob": 0.3645,
+          "rank": 6,
+          "s1_name": "mumbai infra limited",
+          "cand_name": "iridrex",
+          "s1_addr": "b 103 nirman palacejijamatamarg pump house andheri east mumbai maharashtra",
+          "cand_addr": "b 103 nirman palacejijamatamarg pump house andheri east mumbai maharashtra",
+          "name_ratio": 29.63,
+          "addr_ratio": 100.0,
+          "name_jacc": 0.0,
+          "addr_jacc": 1.0
+        },
+        {
+          "s1_id": "S1-90406410",
+          "cand_id": "S2-649681176",
+          "prob": 0.7753,
+          "rank": 2,
+          "s1_name": "white care llp",
+          "cand_name": "\u0d35\u0d48\u0d31\u0d4d\u0d31\u0d4d \u0d15\u0d46\u0d2f\u0d7c \u0d0e\u0d7d\u0d0e\u0d7d\u0d2a\u0d3f",
+          "s1_addr": "ka14 391 393 kannothumchal p o chovva kannur kerala",
+          "cand_addr": "blokc e 290 ka14 391 393 kannothumchal kannur kerala",
+          "name_ratio": 12.5,
+          "addr_ratio": 77.67,
+          "name_jacc": 0.0,
+          "addr_jacc": 0.5
+        },
+        {
+          "s1_id": "S1-596555182",
+          "cand_id": "S2-316714492",
+          "prob": 0.4657,
+          "rank": 1,
+          "s1_name": "creative consultancy pvt ltd",
+          "cand_name": "\u0995\u09cd\u09b0\u09bf\u09af\u09bc\u09c7\u099f\u09bf\u09ad \u0995\u09a8\u09b8\u09be\u09b2\u099f\u09c7\u09a8\u09cd\u09b8\u09bf \u09aa\u09cd\u09b0\u09be\u0987\u09ad\u09c7\u099f \u09b2\u09bf\u09ae\u09bf\u099f\u09c7\u09a1",
+          "s1_addr": "20b sarat bose road kolkata howrah west bengal",
+          "cand_addr": "20b sarat bose road kolkata howrah west bengal",
+          "name_ratio": 8.96,
+          "addr_ratio": 100.0,
+          "name_jacc": 0.0,
+          "addr_jacc": 1.0
+        },
+        {
+          "s1_id": "S1-943567970",
+          "cand_id": "S2-970285299",
+          "prob": 0.613,
+          "rank": 5,
+          "s1_name": "blunt robotics llc",
+          "cand_name": "xyloveo",
+          "s1_addr": "477 ipswich road boxford ma",
+          "cand_addr": "477 ipswich rd boxford towwnship ma",
+          "name_ratio": 24.0,
+          "addr_ratio": 80.65,
+          "name_jacc": 0.0,
+          "addr_jacc": 0.57
+        }
+      ],
+      "name_strong_address_weak": [
+        {
+          "s1_id": "S1-145829425",
+          "cand_id": "S2-215160242",
+          "prob": 0.714,
+          "rank": 126,
+          "s1_name": "north storage care",
+          "cand_name": "north storage care co",
+          "s1_addr": "2804 tower a sarova samata nagar kandivali east mumbai maharashtra",
+          "cand_addr": "",
+          "name_ratio": 92.31,
+          "addr_ratio": 0.0,
+          "name_jacc": 0.75,
+          "addr_jacc": 0.0
+        },
+        {
+          "s1_id": "S1-956446110",
+          "cand_id": "S2-374380545",
+          "prob": 0.7629,
+          "rank": 19,
+          "s1_name": "dns institute",
+          "cand_name": "dns institute llp",
+          "s1_addr": "room no 18 498 b31 bus stand shopping complex koyilandy kozhikode kerala",
+          "cand_addr": "",
+          "name_ratio": 86.67,
+          "addr_ratio": 0.0,
+          "name_jacc": 0.67,
+          "addr_jacc": 0.0
+        },
+        {
+          "s1_id": "S1-731133418",
+          "cand_id": "S2-984425137",
+          "prob": 0.777,
+          "rank": 77,
+          "s1_name": "lockport arts charities",
+          "cand_name": "lockport arts",
+          "s1_addr": "542 4th street lockport il",
+          "cand_addr": "",
+          "name_ratio": 72.22,
+          "addr_ratio": 0.0,
+          "name_jacc": 0.67,
+          "addr_jacc": 0.0
+        },
+        {
+          "s1_id": "S1-872302647",
+          "cand_id": "S3-661942835",
+          "prob": 0.6325,
+          "rank": 28,
+          "s1_name": "lucky pilates inc",
+          "cand_name": "lucky pilates inc",
+          "s1_addr": "321 21st street unit c newark oh",
+          "cand_addr": "",
+          "name_ratio": 100.0,
+          "addr_ratio": 0.0,
+          "name_jacc": 1.0,
+          "addr_jacc": 0.0
+        },
+        {
+          "s1_id": "S1-308240187",
+          "cand_id": "S3-483117090",
+          "prob": 0.7913,
+          "rank": 15,
+          "s1_name": "lb xrp",
+          "cand_name": "lb xrp inc",
+          "s1_addr": "3118 soaring pines trail conroe tx",
+          "cand_addr": "",
+          "name_ratio": 75.0,
+          "addr_ratio": 0.0,
+          "name_jacc": 0.67,
+          "addr_jacc": 0.0
+        }
+      ],
+      "numeric_or_postal_disagreement": [
+        {
+          "s1_id": "S1-947119891",
+          "cand_id": "S3-128064048",
+          "prob": 0.7471,
+          "rank": 3,
+          "s1_name": "prairie initiative",
+          "cand_name": "prairie initiative corporation",
+          "s1_addr": "15 bellview avenue brookhaven ny",
+          "cand_addr": "brookhaven new york 015 bellview avenue",
+          "name_ratio": 75.0,
+          "addr_ratio": 50.7,
+          "name_jacc": 0.67,
+          "addr_jacc": 0.38
+        },
+        {
+          "s1_id": "S1-749745623",
+          "cand_id": "S2-938842806",
+          "prob": 0.4522,
+          "rank": 2,
+          "s1_name": "borst and simmons",
+          "cand_name": "borst simmons",
+          "s1_addr": "2 cranford drive clarkstown ny",
+          "cand_addr": "002 cranford dr clarkstown ny",
+          "name_ratio": 86.67,
+          "addr_ratio": 91.53,
+          "name_jacc": 0.67,
+          "addr_jacc": 0.43
+        },
+        {
+          "s1_id": "S1-537121104",
+          "cand_id": "S3-753068311",
+          "prob": 0.4503,
+          "rank": 4,
+          "s1_name": "em beneficial pvt ltd",
+          "cand_name": "em beneficial pvt",
+          "s1_addr": "ground floor 1448 sector 6 karnal haryana",
+          "cand_addr": "karnal ground floor 448 karnal \u0939\u0930\u093f\u092f\u093e\u0923\u093e",
+          "name_ratio": 89.47,
+          "addr_ratio": 60.76,
+          "name_jacc": 0.75,
+          "addr_jacc": 0.33
+        },
+        {
+          "s1_id": "S1-547971316",
+          "cand_id": "S2-201545177",
+          "prob": 0.1986,
+          "rank": 5,
+          "s1_name": "general design international inc",
+          "cand_name": "general design",
+          "s1_addr": "800 brommer street unit 27 santa cruz ca",
+          "cand_addr": "00800 brommer st santa cruz township ca",
+          "name_ratio": 60.87,
+          "addr_ratio": 70.89,
+          "name_jacc": 0.5,
+          "addr_jacc": 0.36
+        },
+        {
+          "s1_id": "S1-262405622",
+          "cand_id": "S2-507460237",
+          "prob": 0.6023,
+          "rank": 3,
+          "s1_name": "ascencio lee and ruiz",
+          "cand_name": "ascencio lee and ruiz inc",
+          "s1_addr": "4841 madison street columbia heights mn",
+          "cand_addr": "columbia heights mn 484 madison st",
+          "name_ratio": 91.3,
+          "addr_ratio": 52.05,
+          "name_jacc": 0.8,
+          "addr_jacc": 0.5
+        }
+      ],
+      "short_or_generic_business_name": [
+        {
+          "s1_id": "S1-481406384",
+          "cand_id": "S3-365733730",
+          "prob": 0.7941,
+          "rank": 5,
+          "s1_name": "lucky deli",
+          "cand_name": "lucky dame",
+          "s1_addr": "3845 avenel way bldg 15 groveport oh",
+          "cand_addr": "003845 avenel way building 15 groveport ohio",
+          "name_ratio": 80.0,
+          "addr_ratio": 90.0,
+          "name_jacc": 0.33,
+          "addr_jacc": 0.4
+        },
+        {
+          "s1_id": "S1-360696286",
+          "cand_id": "S3-341919011",
+          "prob": 0.3544,
+          "rank": 6,
+          "s1_name": "global endocrinology",
+          "cand_name": "global service",
+          "s1_addr": "9716 yates street omaha ne",
+          "cand_addr": "9716 yates st omha nebraska",
+          "name_ratio": 58.82,
+          "addr_ratio": 79.25,
+          "name_jacc": 0.33,
+          "addr_jacc": 0.25
+        },
+        {
+          "s1_id": "S1-434800644",
+          "cand_id": "S2-65822091",
+          "prob": 0.6068,
+          "rank": 3,
+          "s1_name": "pune pharmaceutical",
+          "cand_name": "pune pahracehutical pahracehutical",
+          "s1_addr": "flat no a604 srno93 195 5 kalpataru serenity haveli pune manjari bk nv pune maharashtra",
+          "cand_addr": "plot 995 flat no a604 srno93 195 5 kalpataru serenity haveli pune manjari bk nv pune maharashtra",
+          "name_ratio": 67.92,
+          "addr_ratio": 95.08,
+          "name_jacc": 0.33,
+          "addr_jacc": 0.88
+        },
+        {
+          "s1_id": "S1-253775422",
+          "cand_id": "S3-115870243",
+          "prob": 0.6584,
+          "rank": 2,
+          "s1_name": "gold projects",
+          "cand_name": "6old projects",
+          "s1_addr": "old no 27 new no 77 redhills road chennai tamil nadu",
+          "cand_addr": "h no 0027 new no 77 redhills road chennai tn",
+          "name_ratio": 92.31,
+          "addr_ratio": 85.42,
+          "name_jacc": 0.33,
+          "addr_jacc": 0.46
+        },
+        {
+          "s1_id": "S1-237967722",
+          "cand_id": "S2-364511890",
+          "prob": 0.7701,
+          "rank": 5,
+          "s1_name": "penoque llc",
+          "cand_name": "pegseu llc",
+          "s1_addr": "128 centre avenue unit 2 rockland ma",
+          "cand_addr": "128 centre avenue rockland ma",
+          "name_ratio": 66.67,
+          "addr_ratio": 89.23,
+          "name_jacc": 0.33,
+          "addr_jacc": 0.71
+        }
+      ],
+      "token_order_or_squashing_issue": [
+        {
+          "s1_id": "S1-418678020",
+          "cand_id": "S2-543139704",
+          "prob": 0.6583,
+          "rank": 2,
+          "s1_name": "laxmi india limited",
+          "cand_name": "laxmi lndia ltd",
+          "s1_addr": "206 r r reality commercial complxes l b s and tank road junction bhandup w est mumbai maharashtra",
+          "cand_addr": "7 206 r r reality commercial complxes l b s and tank road junction bhandup w est maharashtra",
+          "name_ratio": 82.35,
+          "addr_ratio": 95.24,
+          "name_jacc": 0.2,
+          "addr_jacc": 0.89
+        },
+        {
+          "s1_id": "S1-768827157",
+          "cand_id": "S2-495910318",
+          "prob": 0.5483,
+          "rank": 4,
+          "s1_name": "retail traders ltd",
+          "cand_name": "retai1 traders limited",
+          "s1_addr": "tulasi house6 4 6 arundel pet guntur andhra pradesh",
+          "cand_addr": "h no 3 88 tulasi house6 4 6 arundel pet guntur andhra pradesh",
+          "name_ratio": 85.0,
+          "addr_ratio": 91.07,
+          "name_jacc": 0.2,
+          "addr_jacc": 0.69
+        },
+        {
+          "s1_id": "S1-318030986",
+          "cand_id": "S3-248892901",
+          "prob": 0.5731,
+          "rank": 3,
+          "s1_name": "associated insurance associates p c",
+          "cand_name": "associated insurance pc services",
+          "s1_addr": "625 launfall road plymouth township pa",
+          "cand_addr": "625 launfall road plymouth meeting pennsylvania",
+          "name_ratio": 74.63,
+          "addr_ratio": 75.29,
+          "name_jacc": 0.29,
+          "addr_jacc": 0.5
+        },
+        {
+          "s1_id": "S1-76549333",
+          "cand_id": "S2-605437496",
+          "prob": 0.6222,
+          "rank": 2,
+          "s1_name": "national initiative llc",
+          "cand_name": "nationa1 initiative",
+          "s1_addr": "5623 castano drive litchfield park az",
+          "cand_addr": "5623 castano dr litchfield park az",
+          "name_ratio": 85.71,
+          "addr_ratio": 95.77,
+          "name_jacc": 0.25,
+          "addr_jacc": 0.71
+        },
+        {
+          "s1_id": "S1-933340372",
+          "cand_id": "S2-841616862",
+          "prob": 0.7831,
+          "rank": 3,
+          "s1_name": "best plumbing inc",
+          "cand_name": "8est plumbing",
+          "s1_addr": "783 crestwood drive carroll county va",
+          "cand_addr": "783 crestwood dr carroll county va",
+          "name_ratio": 80.0,
+          "addr_ratio": 95.77,
+          "name_jacc": 0.25,
+          "addr_jacc": 0.71
+        }
+      ],
+      "candidate_rank_tail": [
+        {
+          "s1_id": "S1-558609913",
+          "cand_id": "S3-707488647",
+          "prob": 0.0827,
+          "rank": 101,
+          "s1_name": "giri polytechnic",
+          "cand_name": "shri giri services",
+          "s1_addr": "flat no 5 sai vihar co op hsg soc ltd b wing navghar road mulund east mumbai mumbai city maharashtra",
+          "cand_addr": "flat no 5 mumbai city bombay \u092e\u0939\u093e\u0930\u093e\u0937\u094d\u091f\u094d\u0930",
+          "name_ratio": 47.06,
+          "addr_ratio": 34.53,
+          "name_jacc": 0.25,
+          "addr_jacc": 0.24
+        },
+        {
+          "s1_id": "S1-305671464",
+          "cand_id": "S2-545671624",
+          "prob": 0.5514,
+          "rank": 125,
+          "s1_name": "bedford county animal welfare classic charities inc",
+          "cand_name": "bedfordcounty",
+          "s1_addr": "1087 ross road va bedford county",
+          "cand_addr": "1087 ross road pmb 3483 vinton va",
+          "name_ratio": 40.62,
+          "addr_ratio": 58.46,
+          "name_jacc": 0.0,
+          "addr_jacc": 0.44
+        },
+        {
+          "s1_id": "S1-183023755",
+          "cand_id": "S3-457179418",
+          "prob": 0.0184,
+          "rank": 173,
+          "s1_name": "pioneer finance pvt ltd",
+          "cand_name": "pioneer finance \u0b2a\u0b4d\u0b30\u0b3e\u0b07\u0b2d\u0b47\u0b1f\u0b4d \u0b32\u0b3f\u0b2e\u0b3f\u0b1f\u0b47\u0b21\u0b4d",
+          "s1_addr": "plot no n 4 107 irc village nayapalli bhubaneswar khordha orissa",
+          "cand_addr": "plot no n 004 107 khordha bhubaneswar od",
+          "name_ratio": 59.65,
+          "addr_ratio": 63.46,
+          "name_jacc": 0.33,
+          "addr_jacc": 0.46
+        },
+        {
+          "s1_id": "S1-981328904",
+          "cand_id": "S3-600320538",
+          "prob": 0.277,
+          "rank": 103,
+          "s1_name": "new delhi energy private limited",
+          "cand_name": "new de1hi energy private",
+          "s1_addr": "b 18 dda flat golf view apartment saket new delhi delhi",
+          "cand_addr": "b 18 new delhi dl",
+          "name_ratio": 82.14,
+          "addr_ratio": 47.22,
+          "name_jacc": 0.5,
+          "addr_jacc": 0.36
+        },
+        {
+          "s1_id": "S1-970556793",
+          "cand_id": "S3-846743467",
+          "prob": 0.6963,
+          "rank": 116,
+          "s1_name": "hari business limited",
+          "cand_name": "smt hari business ltd id 60050",
+          "s1_addr": "cabin no a 102 basement plot no 3 niti khand 2 indirapuram ghaziabad uttar pradesh",
+          "cand_addr": "cabin no a 102 ghaziabad up",
+          "name_ratio": 66.67,
+          "addr_ratio": 49.54,
+          "name_jacc": 0.29,
+          "addr_jacc": 0.33
+        }
+      ],
+      "near_miss_probability_80_84": [
+        {
+          "s1_id": "S1-121839562",
+          "cand_id": "S2-502898971",
+          "prob": 0.8107,
+          "rank": 5,
+          "s1_name": "horizon wholesale labs llc",
+          "cand_name": "horizon wholesale 5157139909",
+          "s1_addr": "oh 7495 lauren j drive mentor",
+          "cand_addr": "7495 lauren j drive mentor oh",
+          "name_ratio": 66.67,
+          "addr_ratio": 89.66,
+          "name_jacc": 0.4,
+          "addr_jacc": 1.0
+        },
+        {
+          "s1_id": "S1-603442937",
+          "cand_id": "S2-133657619",
+          "prob": 0.8298,
+          "rank": 67,
+          "s1_name": "skill agro private limited",
+          "cand_name": "skill agro limited partners",
+          "s1_addr": "3 101 shree krishan avenyu face limbodi indore madhya pradesh",
+          "cand_addr": "",
+          "name_ratio": 67.92,
+          "addr_ratio": 0.0,
+          "name_jacc": 0.6,
+          "addr_jacc": 0.0
+        },
+        {
+          "s1_id": "S1-954886409",
+          "cand_id": "S3-903616067",
+          "prob": 0.8098,
+          "rank": 1,
+          "s1_name": "novial hills llc",
+          "cand_name": "novial llc hills 70704",
+          "s1_addr": "oh columbus 507 evergreen terrace",
+          "cand_addr": "507 1 2 evergreen terrace columbus ohio",
+          "name_ratio": 68.42,
+          "addr_ratio": 58.33,
+          "name_jacc": 0.75,
+          "addr_jacc": 0.5
+        },
+        {
+          "s1_id": "S1-749745623",
+          "cand_id": "S3-54639608",
+          "prob": 0.8261,
+          "rank": 4,
+          "s1_name": "borst and simmons",
+          "cand_name": "b0rst and simmons",
+          "s1_addr": "2 cranford drive clarkstown ny",
+          "cand_addr": "clarkstown 2 cranford drive new york null",
+          "name_ratio": 94.12,
+          "addr_ratio": 59.15,
+          "name_jacc": 0.5,
+          "addr_jacc": 0.5
+        },
+        {
+          "s1_id": "S1-502043608",
+          "cand_id": "S2-61637150",
+          "prob": 0.8384,
+          "rank": 6,
+          "s1_name": "ij constructions limited",
+          "cand_name": "ij limited service",
+          "s1_addr": "d 37 iind floor gautam buddha nagar uttar pradesh sector 63 noida noida",
+          "cand_addr": "d b3 37 iind floor sector 63 noida noida \u0909\u0924\u094d\u0924\u0930 \u092a\u094d\u0930\u0926\u0947\u0936",
+          "name_ratio": 47.62,
+          "addr_ratio": 59.68,
+          "name_jacc": 0.5,
+          "addr_jacc": 0.47
+        }
+      ],
+      "other": [
+        {
+          "s1_id": "S1-755362802",
+          "cand_id": "S3-440254853",
+          "prob": 0.4234,
+          "rank": 2,
+          "s1_name": "prabhav business center",
+          "cand_name": "mr prabhav business services",
+          "s1_addr": "797 lake town block a kolkata howrah west bengal",
+          "cand_addr": "plot 334 797 lake town block a kolkata howrah \u09aa\u09b6\u09cd\u099a\u09bf\u09ae\u09ac\u0999\u09cd\u0997",
+          "name_ratio": 74.51,
+          "addr_ratio": 71.15,
+          "name_jacc": 0.4,
+          "addr_jacc": 0.58
+        },
+        {
+          "s1_id": "S1-505869859",
+          "cand_id": "S3-882498611",
+          "prob": 0.5551,
+          "rank": 3,
+          "s1_name": "invest investments pvt ltd",
+          "cand_name": "invest imsemefs pvt ltd",
+          "s1_addr": "ff 104 meera mana arcade beside krupa petrol pump ellisbridge ahmedabad gujarat",
+          "cand_addr": "ff 1 104 meera mana arcade beside krupa petrol pump ellisbridge ahmedabad \u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4",
+          "name_ratio": 81.63,
+          "addr_ratio": 90.57,
+          "name_jacc": 0.6,
+          "addr_jacc": 0.79
+        },
+        {
+          "s1_id": "S1-364278564",
+          "cand_id": "S2-511096878",
+          "prob": 0.7655,
+          "rank": 2,
+          "s1_name": "mount chapel",
+          "cand_name": "mount mount chapel co",
+          "s1_addr": "151 32 parkway mt orab oh",
+          "cand_addr": "williamsburg oh 151 c 32 pkwy",
+          "name_ratio": 72.73,
+          "addr_ratio": 40.74,
+          "name_jacc": 0.67,
+          "addr_jacc": 0.33
+        },
+        {
+          "s1_id": "S1-908498505",
+          "cand_id": "S2-410769724",
+          "prob": 0.3445,
+          "rank": 6,
+          "s1_name": "lo venture llc",
+          "cand_name": "lo vr llc",
+          "s1_addr": "620 2nd street city of baraboo wi",
+          "cand_addr": "city of baraboo 620 second st wi",
+          "name_ratio": 78.26,
+          "addr_ratio": 55.38,
+          "name_jacc": 0.5,
+          "addr_jacc": 0.56
+        },
+        {
+          "s1_id": "S1-509283665",
+          "cand_id": "S3-669183842",
+          "prob": 0.5703,
+          "rank": 2,
+          "s1_name": "bay pinnacle horizon lp",
+          "cand_name": "bay pinnacle horizon lp www baypinnac com",
+          "s1_addr": "2450 county road 022 tx jasper",
+          "cand_addr": "245 county road 022 jasper texas",
+          "name_ratio": 71.88,
+          "addr_ratio": 83.87,
+          "name_jacc": 0.57,
+          "addr_jacc": 0.5
+        }
+      ]
+    }
+  },
+  "distributions": {
+    "rank": {
+      "TP": {
+        "mean": 3.8834,
+        "std": 9.5539,
+        "p25": 1.0,
+        "median": 2.0,
+        "p75": 4.0,
+        "p90": 6.0
+      },
+      "FN": {
+        "mean": 12.4234,
+        "std": 26.2559,
+        "p25": 3.0,
+        "median": 4.0,
+        "p75": 7.0,
+        "p90": 27.0
+      }
+    },
+    "prob": {
+      "TP": {
+        "mean": 0.9884,
+        "std": 0.0265,
+        "p25": 0.9938,
+        "median": 0.9985,
+        "p75": 0.9995,
+        "p90": 0.9998
+      },
+      "FN": {
+        "mean": 0.5428,
+        "std": 0.2475,
+        "p25": 0.3472,
+        "median": 0.6178,
+        "p75": 0.7607,
+        "p90": 0.8066
+      }
+    },
+    "context": {
+      "script_mismatch_pct": {
+        "TP": 2.76,
+        "FN": 5.86
+      },
+      "country_india_pct": {
+        "TP": 38.58,
+        "FN": 43.02
+      },
+      "source_s2_pct": {
+        "TP": 47.79,
+        "FN": 48.08
+      }
+    },
+    "key_features": {
+      "name_ratio": {
+        "TP": {
+          "mean": 82.9465,
+          "std": 21.0263,
+          "p25": 75.6757,
+          "median": 88.8889,
+          "p75": 100.0,
+          "p90": 100.0
+        },
+        "FN": {
+          "mean": 67.2211,
+          "std": 30.6198,
+          "p25": 50.0,
+          "median": 78.7879,
+          "p75": 90.9091,
+          "p90": 100.0
+        }
+      },
+      "name_token_set_ratio": {
+        "TP": {
+          "mean": 90.3637,
+          "std": 21.1681,
+          "p25": 91.4286,
+          "median": 100.0,
+          "p75": 100.0,
+          "p90": 100.0
+        },
+        "FN": {
+          "mean": 75.562,
+          "std": 34.0052,
+          "p25": 61.6711,
+          "median": 93.75,
+          "p75": 100.0,
+          "p90": 100.0
+        }
+      },
+      "name_tok_jaccard": {
+        "TP": {
+          "mean": 0.6837,
+          "std": 0.3146,
+          "p25": 0.5,
+          "median": 0.6667,
+          "p75": 1.0,
+          "p90": 1.0
+        },
+        "FN": {
+          "mean": 0.5088,
+          "std": 0.3411,
+          "p25": 0.2,
+          "median": 0.6,
+          "p75": 0.75,
+          "p90": 1.0
+        }
+      },
+      "name_weighted_jaccard": {
+        "TP": {
+          "mean": 0.7089,
+          "std": 0.3284,
+          "p25": 0.4966,
+          "median": 0.8329,
+          "p75": 1.0,
+          "p90": 1.0
+        },
+        "FN": {
+          "mean": 0.5482,
+          "std": 0.3729,
+          "p25": 0.1476,
+          "median": 0.6648,
+          "p75": 0.8706,
+          "p90": 1.0
+        }
+      },
+      "name_char3_jaccard": {
+        "TP": {
+          "mean": 0.705,
+          "std": 0.2736,
+          "p25": 0.5405,
+          "median": 0.7429,
+          "p75": 1.0,
+          "p90": 1.0
+        },
+        "FN": {
+          "mean": 0.5164,
+          "std": 0.3478,
+          "p25": 0.1923,
+          "median": 0.5833,
+          "p75": 0.8,
+          "p90": 1.0
+        }
+      },
+      "addr_ratio": {
+        "TP": {
+          "mean": 79.413,
+          "std": 18.4332,
+          "p25": 70.7071,
+          "median": 84.375,
+          "p75": 92.6554,
+          "p90": 98.5075
+        },
+        "FN": {
+          "mean": 60.3629,
+          "std": 34.1685,
+          "p25": 44.5274,
+          "median": 73.0809,
+          "p75": 87.1373,
+          "p90": 94.3396
+        }
+      },
+      "addr_token_set_ratio": {
+        "TP": {
+          "mean": 91.0151,
+          "std": 13.0002,
+          "p25": 87.7193,
+          "median": 94.4882,
+          "p75": 100.0,
+          "p90": 100.0
+        },
+        "FN": {
+          "mean": 70.1037,
+          "std": 36.6821,
+          "p25": 66.6667,
+          "median": 87.1127,
+          "p75": 94.8409,
+          "p90": 100.0
+        }
+      },
+      "addr_tok_jaccard": {
+        "TP": {
+          "mean": 0.6484,
+          "std": 0.2376,
+          "p25": 0.4545,
+          "median": 0.6667,
+          "p75": 0.8333,
+          "p90": 1.0
+        },
+        "FN": {
+          "mean": 0.4316,
+          "std": 0.3094,
+          "p25": 0.1818,
+          "median": 0.4286,
+          "p75": 0.6667,
+          "p90": 0.8488
+        }
+      },
+      "addr_weighted_jaccard": {
+        "TP": {
+          "mean": 0.7018,
+          "std": 0.2296,
+          "p25": 0.5533,
+          "median": 0.7438,
+          "p75": 0.8726,
+          "p90": 1.0
+        },
+        "FN": {
+          "mean": 0.4493,
+          "std": 0.3186,
+          "p25": 0.1713,
+          "median": 0.4588,
+          "p75": 0.7118,
+          "p90": 0.8757
+        }
+      },
+      "postal_match": {
+        "TP": {
+          "mean": 0.0557,
+          "std": 0.2294,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "p90": 0.0
+        },
+        "FN": {
+          "mean": 0.0148,
+          "std": 0.1207,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "p90": 0.0
+        }
+      },
+      "postal_conflict": {
+        "TP": {
+          "mean": 0.0022,
+          "std": 0.0467,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "p90": 0.0
+        },
+        "FN": {
+          "mean": 0.0134,
+          "std": 0.115,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "p90": 0.0
+        }
+      },
+      "num_tok_conflict": {
+        "TP": {
+          "mean": 0.053,
+          "std": 0.224,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "p90": 0.0
+        },
+        "FN": {
+          "mean": 0.2693,
+          "std": 0.4437,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 1.0,
+          "p90": 1.0
+        }
+      }
+    }
+  }
+}

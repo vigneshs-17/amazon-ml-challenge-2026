@@ -1,0 +1,201 @@
+{
+ "val_s1": 100000,
+ "s23_pool": 10320219,
+ "naive_all_pairs": 1032021900000,
+ "truth_pairs_in_val": 345938,
+ "ablation": {
+  "B1_rare_name": {
+   "channels": [
+    "name"
+   ],
+   "name_k": 1,
+   "addr_k": 1,
+   "country_soft": true,
+   "pairwise_recall_pct": 78.538,
+   "non_singleton_recall_pct": 78.538,
+   "candidates_per_s1": {
+    "0.0": 0.0,
+    "0.5": 1131.0,
+    "0.9": 13458.0,
+    "0.95": 22094.0,
+    "0.99": 31661.0,
+    "1.0": 229501.0,
+    "mean": 5006.6
+   },
+   "pct_s1_zero_candidates": 0.002,
+   "total_candidate_pairs": 500660187,
+   "seconds": 74.6,
+   "candidate_reduction_ratio_vs_naive": 0.999515
+  },
+  "B2_rare_addr": {
+   "channels": [
+    "addr"
+   ],
+   "name_k": 1,
+   "addr_k": 1,
+   "country_soft": true,
+   "pairwise_recall_pct": 79.807,
+   "non_singleton_recall_pct": 79.807,
+   "candidates_per_s1": {
+    "0.0": 0.0,
+    "0.5": 186.0,
+    "0.9": 1809.0,
+    "0.95": 2976.0,
+    "0.99": 7816.0,
+    "1.0": 93496.0,
+    "mean": 724.56
+   },
+   "pct_s1_zero_candidates": 0.207,
+   "total_candidate_pairs": 72455860,
+   "seconds": 26.9,
+   "candidate_reduction_ratio_vs_naive": 0.99993
+  },
+  "B3_exact_name": {
+   "channels": [
+    "exact_name"
+   ],
+   "name_k": 1,
+   "addr_k": 1,
+   "country_soft": true,
+   "pairwise_recall_pct": 25.614,
+   "non_singleton_recall_pct": 25.614,
+   "candidates_per_s1": {
+    "0.0": 0.0,
+    "0.5": 2.0,
+    "0.9": 18.0,
+    "0.95": 69.0,
+    "0.99": 190.0,
+    "1.0": 501.0,
+    "mean": 11.0
+   },
+   "pct_s1_zero_candidates": 25.031,
+   "total_candidate_pairs": 1099981,
+   "seconds": 2.9,
+   "candidate_reduction_ratio_vs_naive": 0.999999
+  },
+  "B4_exact_addr": {
+   "channels": [
+    "exact_addr"
+   ],
+   "name_k": 1,
+   "addr_k": 1,
+   "country_soft": true,
+   "pairwise_recall_pct": 8.259,
+   "non_singleton_recall_pct": 8.259,
+   "candidates_per_s1": {
+    "0.0": 0.0,
+    "0.5": 0.0,
+    "0.9": 1.0,
+    "0.95": 2.0,
+    "0.99": 3.0,
+    "1.0": 17.0,
+    "mean": 0.35
+   },
+   "pct_s1_zero_candidates": 75.708,
+   "total_candidate_pairs": 34924,
+   "seconds": 0.4,
+   "candidate_reduction_ratio_vs_naive": 1.0
+  },
+  "B5_name_addr": {
+   "channels": [
+    "name",
+    "addr"
+   ],
+   "name_k": 1,
+   "addr_k": 1,
+   "country_soft": true,
+   "pairwise_recall_pct": 95.488,
+   "non_singleton_recall_pct": 95.488,
+   "candidates_per_s1": {
+    "0.0": 1.0,
+    "0.5": 1990.0,
+    "0.9": 14840.300000000017,
+    "0.95": 22958.149999999965,
+    "0.99": 33059.03999999998,
+    "1.0": 230746.0,
+    "mean": 5727.47
+   },
+   "pct_s1_zero_candidates": 0.0,
+   "total_candidate_pairs": 572746707,
+   "seconds": 84.4,
+   "candidate_reduction_ratio_vs_naive": 0.999445
+  },
+  "B6_name_addr_exactname": {
+   "channels": [
+    "name",
+    "addr",
+    "exact_name"
+   ],
+   "name_k": 1,
+   "addr_k": 1,
+   "country_soft": true,
+   "pairwise_recall_pct": 95.488,
+   "non_singleton_recall_pct": 95.488,
+   "candidates_per_s1": {
+    "0.0": 1.0,
+    "0.5": 1990.0,
+    "0.9": 14840.300000000017,
+    "0.95": 22958.149999999965,
+    "0.99": 33059.03999999998,
+    "1.0": 230746.0,
+    "mean": 5727.47
+   },
+   "pct_s1_zero_candidates": 0.0,
+   "total_candidate_pairs": 572746874,
+   "seconds": 85.1,
+   "candidate_reduction_ratio_vs_naive": 0.999445
+  },
+  "B7_all_four": {
+   "channels": [
+    "name",
+    "addr",
+    "exact_name",
+    "exact_addr"
+   ],
+   "name_k": 1,
+   "addr_k": 1,
+   "country_soft": true,
+   "pairwise_recall_pct": 95.488,
+   "non_singleton_recall_pct": 95.488,
+   "candidates_per_s1": {
+    "0.0": 1.0,
+    "0.5": 1990.0,
+    "0.9": 14840.300000000017,
+    "0.95": 22958.149999999965,
+    "0.99": 33059.03999999998,
+    "1.0": 230746.0,
+    "mean": 5727.47
+   },
+   "pct_s1_zero_candidates": 0.0,
+   "total_candidate_pairs": 572746874,
+   "seconds": 119.5,
+   "candidate_reduction_ratio_vs_naive": 0.999445
+  },
+  "B7_rare2_name": {
+   "channels": [
+    "name",
+    "addr",
+    "exact_name",
+    "exact_addr"
+   ],
+   "name_k": 2,
+   "addr_k": 1,
+   "country_soft": true,
+   "pairwise_recall_pct": 96.812,
+   "non_singleton_recall_pct": 96.812,
+   "candidates_per_s1": {
+    "0.0": 2.0,
+    "0.5": 21280.5,
+    "0.9": 72827.80000000005,
+    "0.95": 105008.09999999998,
+    "0.99": 848405.0499999999,
+    "1.0": 1237371.0,
+    "mean": 41474.89
+   },
+   "pct_s1_zero_candidates": 0.0,
+   "total_candidate_pairs": 4147489259,
+   "seconds": 560.9,
+   "candidate_reduction_ratio_vs_naive": 0.995981
+  }
+ }
+}

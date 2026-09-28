@@ -1,0 +1,9 @@
+variant_id,model_architecture,training_size,sample_weighting,features,best_threshold,macro_f0_5,precision,recall,singleton_f0_5,non_singleton_f0_5,tp,fp,fn,model_fn,train_runtime_seconds,scoring_runtime_seconds
+V0_EXP003_Control,"HGB(leaves=127, iter=150, l2=2.0)",100k S1 (913k pairs),Uniform (1.0),42 (Features V2),0.85,0.9153,0.95669,0.83639,0.93974,0.91393,28748,701,5902,5902,14.25,18.87
+V1_50k_Train_Size,"HGB(leaves=127, iter=150, l2=2.0)",50k S1 (407k pairs),Uniform (1.0),42 (Features V2),0.78,0.89626,0.94337,0.81244,0.9096,0.89551,27907,966,6743,6743,5.42,17.9
+V2_HP_Weight_1.5x,"HGB(leaves=127, iter=150, l2=2.0)",100k S1 (913k pairs),Hard Positives 1.5x,42 (Features V2),0.88,0.91161,0.95262,0.83517,0.92467,0.91088,28706,830,5944,5944,12.26,18.21
+V3_HP_Weight_2.0x,"HGB(leaves=127, iter=150, l2=2.0)",100k S1 (913k pairs),Hard Positives 2.0x,42 (Features V2),0.9,0.90926,0.95073,0.83302,0.91714,0.90882,28612,908,6038,6038,12.28,18.15
+V4_HP_Weight_2.5x,"HGB(leaves=127, iter=150, l2=2.0)",100k S1 (913k pairs),Hard Positives 2.5x,42 (Features V2),0.9,0.90642,0.94557,0.83861,0.88889,0.9074,28820,1182,5830,5830,12.02,18.15
+V5_HN_Weight_1.5x,"HGB(leaves=127, iter=150, l2=2.0)",100k S1 (913k pairs),Hard Negatives 1.5x,42 (Features V2),0.8,0.91509,0.95662,0.83571,0.94539,0.91339,28736,676,5914,5914,11.97,18.07
+V6_Combined_HP20_HN15,"HGB(leaves=127, iter=150, l2=2.0)",100k S1 (913k pairs),HP 2.0x + HN 1.5x,42 (Features V2),0.86,0.90921,0.94961,0.83489,0.9209,0.90855,28683,974,5967,5967,12.11,17.99
+V7_Tuned_Leaves255_HP20,"HGB(leaves=255, iter=180, l2=3.0, lr=0.08)",100k S1 (913k pairs),HP 2.0x (Tuned Architecture),42 (Features V2),0.9,0.91,0.94985,0.83821,0.90019,0.91055,28806,979,5844,5844,19.07,22.83

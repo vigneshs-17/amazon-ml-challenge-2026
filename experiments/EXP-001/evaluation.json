@@ -1,0 +1,36 @@
+{
+  "experiment_id": "EXP-001",
+  "description": "First ML Baseline: B5 blocking + deterministic Cap-200 + 22 RapidFuzz/token features + HistGradientBoosting",
+  "validation_split": "100k_stratified_s1",
+  "candidate_cap": 200,
+  "candidate_pairs_scored": 18558333,
+  "best_threshold": 0.9,
+  "official_macro_f0_5": 0.85694,
+  "macro_precision": 0.9136,
+  "macro_recall": 0.76674,
+  "f0_5_singletons": 0.88628,
+  "f0_5_non_singletons": 0.8552,
+  "tp": 260938,
+  "fp": 16794,
+  "fn": 85000,
+  "predicted_links": 277732,
+  "avg_predicted_matches_per_s1": 2.777,
+  "blocking_recall": 0.95491,
+  "cap200_recall": 0.91034,
+  "runtimes": {
+    "model_train_seconds": 3.0,
+    "scoring_seconds": 3347.8,
+    "total_job_seconds": 3702.9
+  },
+  "error_breakdown": {
+    "total_ground_truth_links": 345938,
+    "A_raw_b5_blocking_miss": 15599,
+    "B_cap200_pruning_miss": 15418,
+    "C_model_false_negative_miss": 53983,
+    "D_model_false_positive": 16794,
+    "true_positives": 260938,
+    "best_threshold": 0.9,
+    "validation_s1_count": 100000,
+    "candidate_pairs_scored": 18558333
+  }
+}

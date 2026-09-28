@@ -1,0 +1,63 @@
+{
+  "one_time_setup": {
+    "load_seconds": 4.09,
+    "index_build_seconds": 201.67,
+    "idf_build_seconds": 1.51,
+    "setup_total_seconds": 215.05,
+    "setup_total_minutes": 3.58
+  },
+  "benchmark_1k": {
+    "sample_size": 1000,
+    "total_seconds": 75.539,
+    "s1_per_second": 13.24,
+    "pairs_per_second": 2453.5,
+    "avg_raw_candidates_per_s1": 5403.71,
+    "avg_top200_pairs_per_s1": 185.34,
+    "breakdown_seconds": {
+      "retrieval_seconds": 2.186,
+      "retrieval_pct": 2.89,
+      "ranking_seconds": 39.368,
+      "ranking_pct": 52.12,
+      "feature_extraction_seconds": 22.266,
+      "feature_extraction_pct": 29.48,
+      "scoring_seconds": 11.638,
+      "scoring_pct": 15.41,
+      "conflict_resolution_seconds": 0.0043,
+      "conflict_resolution_pct": 0.01
+    },
+    "memory_mb": {
+      "working_set_mb": 17447.5,
+      "peak_working_set_mb": 17621.5
+    }
+  },
+  "benchmark_5k": {
+    "sample_size": 5000,
+    "total_seconds": 216.42,
+    "s1_per_second": 23.1,
+    "pairs_per_second": 4250.8,
+    "avg_raw_candidates_per_s1": 5054.44,
+    "avg_top200_pairs_per_s1": 183.99,
+    "breakdown_seconds": {
+      "retrieval_seconds": 5.823,
+      "retrieval_pct": 2.69,
+      "ranking_seconds": 126.578,
+      "ranking_pct": 58.49,
+      "feature_extraction_seconds": 69.875,
+      "feature_extraction_pct": 32.29,
+      "scoring_seconds": 13.885,
+      "scoring_pct": 6.42,
+      "conflict_resolution_seconds": 0.0125,
+      "conflict_resolution_pct": 0.01
+    },
+    "memory_mb": {
+      "working_set_mb": 13606.7,
+      "peak_working_set_mb": 17621.5
+    }
+  },
+  "scaling_linearity": {
+    "sec_per_s1_1k": 0.07554,
+    "sec_per_s1_5k": 0.04328,
+    "ratio_5k_to_1k": 0.573,
+    "linearity_verified": false
+  }
+}

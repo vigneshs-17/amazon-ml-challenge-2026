@@ -1,0 +1,20 @@
+{
+  "best_threshold": 0.84,
+  "independent": {
+    "macro_f0_5": 0.91721,
+    "macro_precision": 0.95689,
+    "macro_recall": 0.84278,
+    "tp": 288702,
+    "fp": 7740
+  },
+  "unique_owner": {
+    "macro_f0_5": 0.91894,
+    "macro_precision": 0.95904,
+    "macro_recall": 0.8426,
+    "tp": 288633,
+    "fp": 6788
+  },
+  "f0_5_delta": 0.00173,
+  "fp_reduction": 952,
+  "tp_loss": 69
+}

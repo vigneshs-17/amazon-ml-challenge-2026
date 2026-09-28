@@ -1,0 +1,5 @@
+feature_set,feature_count,best_threshold,macro_f0_5,precision,recall,f0_5_singletons,f0_5_non_singletons
+Slice_A_Baseline,22,0.72,0.87287,0.92828,0.77928,0.89642,0.87155
+Slice_B_Plus_Token_IDF,32,0.7,0.87986,0.93019,0.79556,0.90019,0.87872
+Slice_C_Plus_Char_Ngrams,36,0.72,0.88317,0.93436,0.79433,0.91525,0.88137
+Slice_D_Full_All_Features,42,0.74,0.88284,0.93582,0.78944,0.9209,0.88071

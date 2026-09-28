@@ -1,0 +1,39 @@
+{
+  "total_entities": 1000,
+  "chunk_size": 500,
+  "total_chunks": 2,
+  "created_at": "2026-09-27 16:24:50",
+  "last_updated": "2026-09-27 16:31:21",
+  "global_status": "completed",
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "start_idx": 0,
+      "end_idx": 500,
+      "count": 500,
+      "status": "completed",
+      "start_time": "2026-09-27 16:24:50",
+      "completion_time": "2026-09-27 16:25:14",
+      "duration_seconds": 23.03,
+      "candidates_rows": 500,
+      "predictions_rows": 1543,
+      "sha256_candidates": "9c129bf051a2725ab5564b4e129fe4a175d8eba16140c15630ed24f7af6831ae",
+      "sha256_predictions": "b61b504dc9122199fd5fecc84490087406e2ab274dae8a364b12aeec578ebecd"
+    },
+    {
+      "chunk_index": 1,
+      "start_idx": 500,
+      "end_idx": 1000,
+      "count": 500,
+      "status": "completed",
+      "start_time": "2026-09-27 16:30:45",
+      "completion_time": "2026-09-27 16:31:21",
+      "duration_seconds": 35.65,
+      "candidates_rows": 500,
+      "predictions_rows": 1545,
+      "sha256_candidates": "e363344033a94631ab48afd6f264938cd7f47a4071c682988266bb078cd0a5ee",
+      "sha256_predictions": "d1b6552899843c21a778c7b595382345e309e1d24b38b27654dfa86eead7e737"
+    }
+  ],
+  "completed_at": "2026-09-27 16:31:21"
+}

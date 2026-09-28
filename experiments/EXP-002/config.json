@@ -1,0 +1,14 @@
+{
+  "experiment_id": "EXP-002",
+  "model": "HistGradientBoostingClassifier(max_depth=6, max_iter=100)",
+  "feature_count": 42,
+  "feature_slices": [
+    "Slice_A (22)",
+    "Slice_B_IDF (10)",
+    "Slice_C_Ngrams (4)",
+    "Slice_D_Address (6)"
+  ],
+  "training_s1": 913717,
+  "random_seed": 2026,
+  "candidate_cap": 200
+}

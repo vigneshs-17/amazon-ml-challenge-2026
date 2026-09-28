@@ -1,0 +1,13 @@
+{
+  "shard_id": 0,
+  "total_shards": 1,
+  "start_idx": 0,
+  "end_idx": 100000,
+  "entity_count": 100000,
+  "total_truth_links": 345834,
+  "positive_count": 325496,
+  "negative_count": 598960,
+  "total_pairs": 924456,
+  "runtime_seconds": 3708.0,
+  "peak_ram_mb": 17724.0
+}

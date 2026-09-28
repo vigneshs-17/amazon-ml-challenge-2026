@@ -1,0 +1,40 @@
+{
+  "pipeline_name": "EXP-004 Frozen Champion Resumable Production Pipeline",
+  "dataset": {
+    "test_s1_total_entities": 1732544,
+    "test_s2_total_entities": 4983050,
+    "test_s3_total_entities": 4987169,
+    "test_candidate_corpus_total": 9970219
+  },
+  "architecture": {
+    "retrieval_blocker": "B5 (RareTokenIndex on name_norm and address_norm, country-aware fallback to cross-country)",
+    "candidate_ranking": "Formula 2 (Deterministic logarithmic token-IDF + postal code agreement + corroboration + Jaccard overlap)",
+    "candidate_budget_cap": 200,
+    "feature_pipeline": "47 features (Slice A baseline + Slice B token-IDF + Slice C char n-grams + Slice D structure + Slice V3a tolerant numeric)",
+    "model": "HistGradientBoostingClassifier(max_leaf_nodes=127, min_samples_leaf=20, max_iter=150, l2_regularization=2.0, random_state=2026)",
+    "operating_threshold": 0.82,
+    "conflict_resolution": "Greedy unique-owner resolution (argmax probability per candidate across all S1)"
+  },
+  "resumable_execution_engine": {
+    "script": "src/run_test_inference_resumable.py",
+    "chunk_size": 50000,
+    "total_chunks": 35,
+    "chunk_directory": "output/chunks",
+    "manifest_file": "experiments/FINAL-INFERENCE-PREP/test_manifest.json",
+    "atomic_writes": "Enabled (.tmp -> row-count and SHA-256 validation -> atomic rename to .tsv)",
+    "crash_recovery": "Automated (skips verified completed chunks and resumes from exact point of interruption)",
+    "global_conflict_resolution": "Two-stage streaming: candidates written per chunk; p >= 0.82 predictions streamed; global argmax applied during final assembly"
+  },
+  "performance_and_hardware": {
+    "hardware_specs": "AMD/Intel 16 CPU cores, 24 GB RAM, Windows PowerShell, Python 3.14",
+    "peak_memory_single_process": "13.6 GB to 17.6 GB (safe within 24 GB RAM)",
+    "measured_throughput_single_process": "23.10 S1/sec (4,250.8 pairs/sec)",
+    "projected_single_process_runtime_hours": 20.89,
+    "projected_parallel_runtime_hours": "5.2 to 5.5 hours with 4 parallel chunk workers"
+  },
+  "verification_status": {
+    "exact_mathematical_equivalence": "PASS (0 mismatches across all 7 criteria on 1,000 validation entities)",
+    "submission_contract": "PASS (Official Amazon ML Challenge 2026 validator exit code 0)",
+    "resumability_crash_recovery": "VERIFIED (automated skip of completed chunks confirmed)"
+  }
+}

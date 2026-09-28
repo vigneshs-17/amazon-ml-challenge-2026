@@ -1,0 +1,23 @@
+{
+  "total_reachable_fn": 3654,
+  "threshold": 0.84,
+  "counts": {
+    "<0.10": 255,
+    "0.10-0.30": 525,
+    "0.30-0.50": 583,
+    "0.50-0.70": 900,
+    "0.70-0.80": 962,
+    "0.80-0.84": 427,
+    ">=0.84_conflict_loss": 2
+  },
+  "percentages": {
+    "<0.10": 6.98,
+    "0.10-0.30": 14.37,
+    "0.30-0.50": 15.96,
+    "0.50-0.70": 24.63,
+    "0.70-0.80": 26.33,
+    "0.80-0.84": 11.69,
+    ">=0.84_conflict_loss": 0.05
+  },
+  "summary": "Distribution indicates whether misses are near-misses (close to threshold) or severe feature divergence (sub-0.10)."
+}

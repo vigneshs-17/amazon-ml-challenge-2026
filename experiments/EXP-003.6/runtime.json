@@ -1,0 +1,19 @@
+{
+  "V0_Control": {
+    "train_seconds": 0.0,
+    "score_seconds": 20.53
+  },
+  "V1_F2_Training": {
+    "train_seconds": 0.0,
+    "score_seconds": 18.56
+  },
+  "V2_Tolerant_Numeric": {
+    "train_seconds": 0.0,
+    "score_seconds": 18.67
+  },
+  "V3_Full_V3": {
+    "train_seconds": 0.0,
+    "score_seconds": 18.88
+  },
+  "total_experiment_seconds": 100.9
+}

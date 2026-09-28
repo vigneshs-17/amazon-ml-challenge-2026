@@ -1,0 +1,12 @@
+{
+  "total_test_s1_entities": 1732544,
+  "one_time_setup_hours": 0.06,
+  "baseline_scoring_hours": 23.27,
+  "baseline_total_hours": 23.34,
+  "optimized_scoring_rate_s1_per_sec": 23.1,
+  "optimized_scoring_hours": 20.83,
+  "optimized_total_hours": 20.89,
+  "speedup_factor": 1.12,
+  "time_saved_hours": 2.45,
+  "projected_duration_formatted": "20 hours 53 minutes"
+}

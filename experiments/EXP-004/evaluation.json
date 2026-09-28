@@ -1,0 +1,43 @@
+{
+  "experiment_id": "EXP-004",
+  "validation_split": "100k_stratified_s1",
+  "candidate_cap": 200,
+  "candidate_pairs_scored": 18558349,
+  "best_threshold": 0.82,
+  "unique_owner_applied": true,
+  "official_macro_f0_5": 0.92237,
+  "macro_precision": 0.96012,
+  "macro_recall": 0.85047,
+  "f0_5_singletons": 0.94126,
+  "f0_5_non_singletons": 0.92125,
+  "tp": 291517,
+  "fp": 7040,
+  "total_fn": 54421,
+  "reachable_model_fn": 34176,
+  "raw_b5_blocking_recall": 0.95489,
+  "cap200_candidate_recall": 0.94148,
+  "error_breakdown": {
+    "total_ground_truth_links": 345938,
+    "A_raw_retrieval_misses": 15604,
+    "A_raw_retrieval_misses_pct": 4.51,
+    "B_cap200_pruning_misses": 4641,
+    "B_cap200_pruning_misses_pct": 1.34,
+    "C_reachable_model_fn": 34176,
+    "C_reachable_model_fn_pct": 9.88,
+    "D_model_false_positives": 7040,
+    "E_true_positives": 291517,
+    "E_true_positives_pct": 84.27,
+    "F_total_pipeline_fn": 54421,
+    "best_threshold": 0.82,
+    "unique_owner_applied": true,
+    "verification": "total_pipeline_fn == A + B + C (Exact Identity Holds)"
+  },
+  "runtimes": {
+    "model_train_seconds": 0.0,
+    "setup_seconds": 252.0,
+    "scoring_seconds": 4499.4,
+    "total_job_seconds": 4765.0,
+    "peak_ram_mb": 18232.3,
+    "final_ram_mb": 8266.8
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "model_train_seconds": 0.0,
+  "setup_seconds": 252.0,
+  "scoring_seconds": 4499.4,
+  "total_job_seconds": 4765.0,
+  "peak_ram_mb": 18232.3,
+  "final_ram_mb": 8266.8
+}

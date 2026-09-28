@@ -1,0 +1,5 @@
+feature_family,feature_count,macro_f0_5,notes
+Slice_A_Baseline,22,0.87287,EXP-002 ablation
+Slice_B_Plus_Token_IDF,32,0.87986,EXP-002 ablation
+Slice_C_Plus_Char_Ngrams,36,0.88317,EXP-002 ablation
+Slice_D_Full_All_Features,42,0.91506,EXP-002.5 / EXP-003 M0

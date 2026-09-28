@@ -1,0 +1,5 @@
+threshold,macro_f05,precision,recall,tp,fp,total_fn,reachable_model_fn,variant,formula_train,features,feature_count
+0.85,0.91527,0.95665,0.83637,28747,703,5903,3784,V0_Control,Formula 1,Features V2 (42),42
+0.84,0.91595,0.9569,0.83826,28814,700,5836,3717,V1_F2_Training,Formula 2,Features V2 (42),42
+0.83,0.91815,0.95742,0.84439,29046,743,5604,3485,V2_Tolerant_Numeric,Formula 2,Features V2 + Tolerant Numeric (47),47
+0.84,0.91707,0.95738,0.84105,28917,690,5733,3614,V3_Full_V3,Formula 2,Features V2 + Numeric + Asymmetry (52),52

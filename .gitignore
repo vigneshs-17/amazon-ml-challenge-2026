@@ -1,0 +1,83 @@
+# ==========================================
+# Amazon ML Challenge 2026 - .gitignore
+# ==========================================
+
+# Python Bytecode and Compiler Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing and Linting Caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual Environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE and Operating System
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Challenge Data (Confidential / Large - Excluded from Git)
+data/raw/
+data/interim/
+data/processed/
+data/
+
+# Generated Output Files (Including 2GB candidate pairs and final TSVs)
+output/
+output/chunks/
+output/deadline_fallback/
+output/deadline_final/
+output/final/
+*.tsv
+
+# Large Binary Weights and Caches
+*.parquet
+*.pkl
+*.joblib
+*.npy
+*.bin
+experiments/**/*_ids.csv
+experiments/**/*_s1_ids.csv
+
+# Logs and Temporary Scratch Directories
+logs/
+scratch/
+*.log
+*.tmp
+*.temp
+*.rev.tmp

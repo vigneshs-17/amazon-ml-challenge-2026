@@ -1,0 +1,10 @@
+{
+  "total_ground_truth_links": 345938,
+  "A_raw_b5_blocking_miss": 15599,
+  "B_cap200_pruning_miss": 15418,
+  "C_model_false_negative_miss": 37219,
+  "D_model_false_positive": 8004,
+  "true_positives": 277702,
+  "best_threshold": 0.78,
+  "unique_owner_applied": true
+}

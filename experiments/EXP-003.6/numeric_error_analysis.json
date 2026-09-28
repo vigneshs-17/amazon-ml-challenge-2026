@@ -1,0 +1,564 @@
+{
+  "total_numeric_postal_reachable_fn": 995,
+  "pct_of_all_reachable_fn": 27.23,
+  "subcategories": {
+    "A_exact_numeric_mismatch": {
+      "count": 528,
+      "pct": 53.07,
+      "sample_examples": [
+        {
+          "s1_id": "S1-947119891",
+          "cand_id": "S3-128064048",
+          "prob": 0.7471,
+          "rank": 3,
+          "s1_name": "prairie initiative",
+          "cand_name": "prairie initiative corporation",
+          "s1_addr": "15 bellview avenue brookhaven ny",
+          "cand_addr": "brookhaven new york 015 bellview avenue",
+          "nums1": [
+            "15"
+          ],
+          "nums2": [
+            "015"
+          ],
+          "postals1": [],
+          "postals2": []
+        },
+        {
+          "s1_id": "S1-749745623",
+          "cand_id": "S2-938842806",
+          "prob": 0.4522,
+          "rank": 2,
+          "s1_name": "borst and simmons",
+          "cand_name": "borst simmons",
+          "s1_addr": "2 cranford drive clarkstown ny",
+          "cand_addr": "002 cranford dr clarkstown ny",
+          "nums1": [
+            "2"
+          ],
+          "nums2": [
+            "002"
+          ],
+          "postals1": [],
+          "postals2": []
+        },
+        {
+          "s1_id": "S1-537121104",
+          "cand_id": "S3-753068311",
+          "prob": 0.4503,
+          "rank": 4,
+          "s1_name": "em beneficial pvt ltd",
+          "cand_name": "em beneficial pvt",
+          "s1_addr": "ground floor 1448 sector 6 karnal haryana",
+          "cand_addr": "karnal ground floor 448 karnal \u0939\u0930\u093f\u092f\u093e\u0923\u093e",
+          "nums1": [
+            "6",
+            "1448"
+          ],
+          "nums2": [
+            "448"
+          ],
+          "postals1": [],
+          "postals2": []
+        },
+        {
+          "s1_id": "S1-262405622",
+          "cand_id": "S2-507460237",
+          "prob": 0.6023,
+          "rank": 3,
+          "s1_name": "ascencio lee and ruiz",
+          "cand_name": "ascencio lee and ruiz inc",
+          "s1_addr": "4841 madison street columbia heights mn",
+          "cand_addr": "columbia heights mn 484 madison st",
+          "nums1": [
+            "4841"
+          ],
+          "nums2": [
+            "484"
+          ],
+          "postals1": [],
+          "postals2": []
+        },
+        {
+          "s1_id": "S1-786529142",
+          "cand_id": "S3-686379398",
+          "prob": 0.5432,
+          "rank": 3,
+          "s1_name": "cascade council iii p c",
+          "cand_name": "cascade cascade caucol iii p c",
+          "s1_addr": "475 fir villa road dallas or",
+          "cand_addr": "75 fir villa road dallas oregon",
+          "nums1": [
+            "475"
+          ],
+          "nums2": [
+            "75"
+          ],
+          "postals1": [],
+          "postals2": []
+        }
+      ]
+    },
+    "B_numeric_suffix_variation": {
+      "count": 139,
+      "pct": 13.97,
+      "sample_examples": [
+        {
+          "s1_id": "S1-57396698",
+          "cand_id": "S2-14731009",
+          "prob": 0.3166,
+          "rank": 2,
+          "s1_name": "capital paper llc",
+          "cand_name": "capital paper",
+          "s1_addr": "38837 450th street lengby mn",
+          "cand_addr": "38842 450st street lengby mn",
+          "nums1": [
+            "38837",
+            "450th"
+          ],
+          "nums2": [
+            "38842",
+            "450st"
+          ],
+          "postals1": [
+            "38837"
+          ],
+          "postals2": [
+            "38842"
+          ]
+        },
+        {
+          "s1_id": "S1-23669343",
+          "cand_id": "S2-131202256",
+          "prob": 0.2871,
+          "rank": 2,
+          "s1_name": "best biomedical enterprises",
+          "cand_name": "best biomedical enterprises inc",
+          "s1_addr": "18 iron gate drive andover ma",
+          "cand_addr": "andover 18a iron gate dr ma",
+          "nums1": [
+            "18"
+          ],
+          "nums2": [
+            "18a"
+          ],
+          "postals1": [],
+          "postals2": []
+        },
+        {
+          "s1_id": "S1-570181116",
+          "cand_id": "S3-928375728",
+          "prob": 0.3078,
+          "rank": 2,
+          "s1_name": "castillo lyon corsi",
+          "cand_name": "castillo lyon and corsi",
+          "s1_addr": "bldg b 17832 65th street redmond wa",
+          "cand_addr": "0017832 65nd street n a redmond washington",
+          "nums1": [
+            "17832",
+            "65th"
+          ],
+          "nums2": [
+            "65nd",
+            "0017832"
+          ],
+          "postals1": [
+            "17832"
+          ],
+          "postals2": []
+        },
+        {
+          "s1_id": "S1-890154000",
+          "cand_id": "S3-11688744",
+          "prob": 0.3632,
+          "rank": 2,
+          "s1_name": "beckman tillett rosenthal",
+          "cand_name": "beckman tillett rosenthal co",
+          "s1_addr": "2322 bethshire lane denver nc",
+          "cand_addr": "2322b bethshire ln denver north carolina",
+          "nums1": [
+            "2322"
+          ],
+          "nums2": [
+            "2322b"
+          ],
+          "postals1": [],
+          "postals2": []
+        },
+        {
+          "s1_id": "S1-890154000",
+          "cand_id": "S3-506053306",
+          "prob": 0.37,
+          "rank": 3,
+          "s1_name": "beckman tillett rosenthal",
+          "cand_name": "the beckman tillett rosenthal",
+          "s1_addr": "2322 bethshire lane denver nc",
+          "cand_addr": "2322b bethshire ln denver north carolina",
+          "nums1": [
+            "2322"
+          ],
+          "nums2": [
+            "2322b"
+          ],
+          "postals1": [],
+          "postals2": []
+        }
+      ]
+    },
+    "C_formatting_difference": {
+      "count": 0,
+      "pct": 0.0,
+      "sample_examples": []
+    },
+    "D_partial_unit_or_floor_variation": {
+      "count": 151,
+      "pct": 15.18,
+      "sample_examples": [
+        {
+          "s1_id": "S1-547971316",
+          "cand_id": "S2-201545177",
+          "prob": 0.1986,
+          "rank": 5,
+          "s1_name": "general design international inc",
+          "cand_name": "general design",
+          "s1_addr": "800 brommer street unit 27 santa cruz ca",
+          "cand_addr": "00800 brommer st santa cruz township ca",
+          "nums1": [
+            "800",
+            "27"
+          ],
+          "nums2": [
+            "00800"
+          ],
+          "postals1": [],
+          "postals2": [
+            "00800"
+          ]
+        },
+        {
+          "s1_id": "S1-674356066",
+          "cand_id": "S3-123834957",
+          "prob": 0.5609,
+          "rank": 6,
+          "s1_name": "belva s cascade pilates cornelius",
+          "cand_name": "belva s pilates cornelius 5ervices",
+          "s1_addr": "20321 sterling bay lane cornelius nc",
+          "cand_addr": "0020321 sterling bay ln cornelius north carolina",
+          "nums1": [
+            "20321"
+          ],
+          "nums2": [
+            "0020321"
+          ],
+          "postals1": [
+            "20321"
+          ],
+          "postals2": []
+        },
+        {
+          "s1_id": "S1-952047146",
+          "cand_id": "S3-147552651",
+          "prob": 0.0408,
+          "rank": 4,
+          "s1_name": "better defense works pc",
+          "cand_name": "better defense 84864",
+          "s1_addr": "3650 logan lancaster road unit 14 lancaster oh",
+          "cand_addr": "003650 logan lancaster rd berne twp ohio",
+          "nums1": [
+            "3650",
+            "14"
+          ],
+          "nums2": [
+            "003650"
+          ],
+          "postals1": [],
+          "postals2": [
+            "003650"
+          ]
+        },
+        {
+          "s1_id": "S1-152515054",
+          "cand_id": "S2-208023005",
+          "prob": 0.3735,
+          "rank": 3,
+          "s1_name": "reed carr and getty snow inc",
+          "cand_name": "reed carr and getty snow",
+          "s1_addr": "572 silcott hills road clarkston wa",
+          "cand_addr": "00572 silcott hills rd clarkston wa",
+          "nums1": [
+            "572"
+          ],
+          "nums2": [
+            "00572"
+          ],
+          "postals1": [],
+          "postals2": [
+            "00572"
+          ]
+        },
+        {
+          "s1_id": "S1-941622412",
+          "cand_id": "S2-712291523",
+          "prob": 0.428,
+          "rank": 5,
+          "s1_name": "regional aldel inc",
+          "cand_name": "regional aldel",
+          "s1_addr": "3827 poker flats road great falls mt",
+          "cand_addr": "03827 poker flats rd n a great falls mt",
+          "nums1": [
+            "3827"
+          ],
+          "nums2": [
+            "03827"
+          ],
+          "postals1": [],
+          "postals2": [
+            "03827"
+          ]
+        }
+      ]
+    },
+    "E_postal_conflict_only": {
+      "count": 11,
+      "pct": 1.11,
+      "sample_examples": [
+        {
+          "s1_id": "S1-83537942",
+          "cand_id": "S2-297857799",
+          "prob": 0.7694,
+          "rank": 3,
+          "s1_name": "foot ankle physicians inc",
+          "cand_name": "foot ankle physicians inc services",
+          "s1_addr": "10207 184th avenue bonney lake wa",
+          "cand_addr": "010207 184th avenue bonney lake wa",
+          "nums1": [
+            "184th",
+            "10207"
+          ],
+          "nums2": [
+            "184th",
+            "010207"
+          ],
+          "postals1": [
+            "10207"
+          ],
+          "postals2": [
+            "010207"
+          ]
+        },
+        {
+          "s1_id": "S1-740344228",
+          "cand_id": "S2-710805835",
+          "prob": 0.3164,
+          "rank": 1,
+          "s1_name": "patel knight meza inc",
+          "cand_name": "patel knight meza inc service",
+          "s1_addr": "432592 310 road vinita ok",
+          "cand_addr": "43259 310 road vinita ok",
+          "nums1": [
+            "432592",
+            "310"
+          ],
+          "nums2": [
+            "310",
+            "43259"
+          ],
+          "postals1": [
+            "432592"
+          ],
+          "postals2": [
+            "43259"
+          ]
+        },
+        {
+          "s1_id": "S1-133155553",
+          "cand_id": "S2-312264940",
+          "prob": 0.1293,
+          "rank": 2,
+          "s1_name": "pegasus",
+          "cand_name": "pegasus inc",
+          "s1_addr": "10808 19th terrace independence mo",
+          "cand_addr": "10822 19th terrace independence mo",
+          "nums1": [
+            "10808",
+            "19th"
+          ],
+          "nums2": [
+            "10822",
+            "19th"
+          ],
+          "postals1": [
+            "10808"
+          ],
+          "postals2": [
+            "10822"
+          ]
+        },
+        {
+          "s1_id": "S1-133155553",
+          "cand_id": "S3-64478791",
+          "prob": 0.1042,
+          "rank": 7,
+          "s1_name": "pegasus",
+          "cand_name": "pegasus services",
+          "s1_addr": "10808 19th terrace independence mo",
+          "cand_addr": "10822 10824 19th ter null independencce missouri",
+          "nums1": [
+            "10808",
+            "19th"
+          ],
+          "nums2": [
+            "10822",
+            "10824",
+            "19th"
+          ],
+          "postals1": [
+            "10808"
+          ],
+          "postals2": [
+            "10822",
+            "10824"
+          ]
+        },
+        {
+          "s1_id": "S1-834457884",
+          "cand_id": "S2-869429490",
+          "prob": 0.5732,
+          "rank": 6,
+          "s1_name": "premier direct alussa inc",
+          "cand_name": "premier direct alussa",
+          "s1_addr": "19825 800th street jewett il",
+          "cand_addr": "il jewett 019825 800th street",
+          "nums1": [
+            "800th",
+            "19825"
+          ],
+          "nums2": [
+            "019825",
+            "800th"
+          ],
+          "postals1": [
+            "19825"
+          ],
+          "postals2": [
+            "019825"
+          ]
+        }
+      ]
+    },
+    "F_multiple_numbers_partial_overlap": {
+      "count": 0,
+      "pct": 0.0,
+      "sample_examples": []
+    },
+    "G_genuine_contradiction": {
+      "count": 166,
+      "pct": 16.68,
+      "sample_examples": [
+        {
+          "s1_id": "S1-235827905",
+          "cand_id": "S3-873245999",
+          "prob": 0.0554,
+          "rank": 175,
+          "s1_name": "sai infotech private limited",
+          "cand_name": "private sai infotech limited",
+          "s1_addr": "patna bihar 709 7th floor jagat trade centre maurya lok fraser road",
+          "cand_addr": "707 patna boring road patna br",
+          "nums1": [
+            "7th",
+            "709"
+          ],
+          "nums2": [
+            "707"
+          ],
+          "postals1": [],
+          "postals2": []
+        },
+        {
+          "s1_id": "S1-967399132",
+          "cand_id": "S3-430132140",
+          "prob": 0.6636,
+          "rank": 4,
+          "s1_name": "eye medicine",
+          "cand_name": "eye medicine",
+          "s1_addr": "502 valley oak drive bremerton wa",
+          "cand_addr": "883d valley oak dr bemerton washington",
+          "nums1": [
+            "502"
+          ],
+          "nums2": [
+            "883d"
+          ],
+          "postals1": [],
+          "postals2": []
+        },
+        {
+          "s1_id": "S1-967399132",
+          "cand_id": "S3-443661319",
+          "prob": 0.3488,
+          "rank": 24,
+          "s1_name": "eye medicine",
+          "cand_name": "eye medicine corp",
+          "s1_addr": "502 valley oak drive bremerton wa",
+          "cand_addr": "883d valley oak dr bemerton washington",
+          "nums1": [
+            "502"
+          ],
+          "nums2": [
+            "883d"
+          ],
+          "postals1": [],
+          "postals2": []
+        },
+        {
+          "s1_id": "S1-636198387",
+          "cand_id": "S3-820194939",
+          "prob": 0.5966,
+          "rank": 6,
+          "s1_name": "aguilar holdings group center",
+          "cand_name": "aguilar holdings group ciithce",
+          "s1_addr": "1380 w tunnel boulevard houma la",
+          "cand_addr": "01380 west tunnel boulevard pmb 8931 louisiana bayou cane",
+          "nums1": [
+            "1380"
+          ],
+          "nums2": [
+            "01380",
+            "8931"
+          ],
+          "postals1": [],
+          "postals2": [
+            "01380"
+          ]
+        },
+        {
+          "s1_id": "S1-636198387",
+          "cand_id": "S3-906103841",
+          "prob": 0.0024,
+          "rank": 19,
+          "s1_name": "aguilar holdings group center",
+          "cand_name": "aguilar h0ldings",
+          "s1_addr": "1380 w tunnel boulevard houma la",
+          "cand_addr": "louisiana 01380 west tunnel blvd pmb 8931 bayou cane",
+          "nums1": [
+            "1380"
+          ],
+          "nums2": [
+            "01380",
+            "8931"
+          ],
+          "postals1": [],
+          "postals2": [
+            "01380"
+          ]
+        }
+      ]
+    }
+  },
+  "evidence_based_recommendations": [
+    "1. Implement base-number matching (stripping alphanumeric suffixes like 12A -> 12). Directly targets Subcategory B (suffix variation).",
+    "2. Implement numeric partial overlap ratio: len(shared_nums) / min(len(nums1), len(nums2)). Directly targets Subcategory F (multiple numbers with partial overlap).",
+    "3. Implement address alpha similarity without numbers: RapidFuzz token_set_ratio on address after stripping all digits. Distinguishes Subcategory A/D (street/city agree, unit differs) from Subcategory G (genuine contradiction).",
+    "4. Implement postal partial agreement: 3-digit prefix agreement on 5/6 digit postal codes (matching postal district). Directly targets Subcategory E."
+  ]
+}

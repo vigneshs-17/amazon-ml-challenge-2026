@@ -1,0 +1,116 @@
+{
+ "gt_rows": 2206821,
+ "duplicate_source1_entity_id": 0,
+ "gt_s1_not_in_source1": 0,
+ "source1_not_in_gt": 0,
+ "gt_s1_bad_prefix": 0,
+ "lists_with_blank_items": 0,
+ "lists_with_whitespace_items": 0,
+ "lists_with_internal_duplicates": 0,
+ "total_positive_pairs": 7638365,
+ "matched_ids_prefix_counts": {
+  "S3-": 3944746,
+  "S2-": 3693619
+ },
+ "matched_ids_referencing_S1": 0,
+ "unknown_S2_ids": 0,
+ "unknown_S3_ids": 0,
+ "s2s3_records_matched_to_multiple_s1": 0,
+ "distinct_matched_records": 7638365,
+ "s2_records_total": 5034616,
+ "s3_records_total": 5285603,
+ "s2_records_never_matched": 1340997,
+ "s3_records_never_matched": 1340857,
+ "match_count": {
+  "zero": 123247,
+  "zero_pct": 5.585,
+  "one": 119157,
+  "two": 375212,
+  "three_plus": 1589205,
+  "max": 11,
+  "mean": 3.4613,
+  "median": 3.0,
+  "mean_nonzero": 3.666,
+  "histogram": {
+   "0": 123247,
+   "1": 119157,
+   "2": 375212,
+   "3": 530841,
+   "4": 484115,
+   "5": 321957,
+   "6": 164868,
+   "7": 63968,
+   "8": 18680,
+   "9": 4205,
+   "10": 534,
+   "11": 37
+  }
+ },
+ "match_source_mix": {
+  "none": 123247,
+  "s2_only": 143029,
+  "s3_only": 164498,
+  "both": 1776047,
+  "s2_count_hist": {
+   "0": 287745,
+   "1": 789108,
+   "2": 652779,
+   "3": 333957,
+   "4": 119078,
+   "5": 24154
+  },
+  "s3_count_hist": {
+   "0": 266276,
+   "1": 716417,
+   "2": 668375,
+   "3": 372443,
+   "4": 145116,
+   "5": 35378,
+   "6": 2816
+  }
+ },
+ "by_country": {
+  "India": {
+   "s1": 883188,
+   "singleton_pct": 5.588,
+   "mean_matches": 3.465,
+   "mean_s2": 1.676,
+   "mean_s3": 1.788,
+   "hist": {
+    "0": 49351,
+    "1": 47468,
+    "2": 149927,
+    "3": 211965,
+    "4": 193669,
+    "5": 129339,
+    "6": 66462,
+    "7": 25669,
+    "8": 7463,
+    "9": 1671,
+    "10": 187,
+    "11": 17
+   }
+  },
+  "US": {
+   "s1": 1323633,
+   "singleton_pct": 5.583,
+   "mean_matches": 3.459,
+   "mean_s2": 1.672,
+   "mean_s3": 1.787,
+   "hist": {
+    "0": 73896,
+    "1": 71689,
+    "2": 225285,
+    "3": 318876,
+    "4": 290446,
+    "5": 192618,
+    "6": 98406,
+    "7": 38299,
+    "8": 11217,
+    "9": 2534,
+    "10": 347,
+    "11": 20
+   }
+  }
+ }
+}

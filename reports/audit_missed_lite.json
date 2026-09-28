@@ -1,0 +1,166 @@
+{
+ "sample_size": 300000,
+ "note": "This is a proxy for 'structurally unreachable by ANY token-overlap blocker' -- computed on the same fixed-seed 300k positive-pair sample as audit_pairs.py, NOT blocker-specific full-scale recall. A pair with zero shared name tokens cannot be retrieved by exact-name, prefix, or rarest-K-name blocking at any k; likewise for address. 'zero_both' pairs need a fundamentally different signal (numeric/exact-field, embedding, phonetic, etc.).",
+ "zero_shared_name_tokens": 42887,
+ "zero_shared_name_tokens_pct": 14.296,
+ "zero_shared_addr_tokens": 13181,
+ "zero_shared_addr_tokens_pct": 4.394,
+ "zero_shared_both_pct": 0.002,
+ "examples_zero_shared_both": [
+  [
+   "S1-634341534",
+   "Martin Advanced Noble LLC",
+   "3820 3rd Street, Phoenix, AZ",
+   "S3-577807107",
+   "manoblecom",
+   "820 3st St, Osborn, Arizona",
+   "US"
+  ],
+  [
+   "S1-814360532",
+   "Beia",
+   "3118 100th Street, Lubbock, TX",
+   "S3-570040865",
+   "8eia",
+   "3326 100rd St, Lubbck, Texas",
+   "US"
+  ],
+  [
+   "S1-689797970",
+   "Ventura Cayman LLC",
+   "18667 74th Street, Ottumwa, IA",
+   "S3-713258767",
+   "venturacayman.com",
+   "Iowa, 18657 74nd St, Ottmwa",
+   "US"
+  ],
+  [
+   "S1-136017052",
+   "Sunrise Constructions Private Limited",
+   "606, Central Plaza, 6Th Floor 2/6, Sarat Bose Road, Kolkata, Howrah, West Bengal",
+   "S3-425327489",
+   "sunriseconstructionsprivate.com",
+   "00606, Calcutta, Dankuni, WB",
+   "India"
+  ],
+  [
+   "S1-11246184",
+   "National Education Technologies of Port Neches Inc",
+   "2046 11th Street, Port Neches, TX",
+   "S3-973887609",
+   "nationaleducationtechnologies.com",
+   "Eleventh St, Texas, PT Nehes",
+   "US"
+  ],
+  [
+   "S1-804571185",
+   "Surgical Rocky Associates PC",
+   "511 Second Street, Farmville Town, VA",
+   "S3-633027479",
+   "surgicalrockyassociates.com",
+   "11 2rd St, Farmvilel, Virginia",
+   "US"
+  ],
+  [
+   "S1-128747063",
+   "Mansour Federation, LLC",
+   "1001 8th Street, Lillington, NC",
+   "S3-50008384",
+   "mansourfederation.com",
+   "100 Eighth St, Lilington, North Carolina",
+   "US"
+  ]
+ ],
+ "examples_zero_shared_name_but_addr_shares": [
+  [
+   "S1-503848542",
+   "Mejia and Collins Bond Inc",
+   "405 Black Ankle Road, Lockhart, TX",
+   "S3-865058454",
+   "Zetaecto",
+   "405-A Black Ankle Rd, Lockhart, Texas",
+   "US"
+  ],
+  [
+   "S1-74259538",
+   "Shivam Systems Pvt Ltd",
+   "Xxvi/ 494, Narakathumkel, Block Junction, Mudavoor P.O, Velloorkunnam (Part), Muvattupuzha, Ernakulam, Kerala",
+   "S3-430891483",
+   "ശിവം സിസ്റ്റംസ് പ്രൈവറ്റ് ലിമിറ്റഡ്",
+   "Door No 384 Xxvi/ 494, Narakathumkel, Block Junction, Mudavoor P.o, Velloorkunnam (Part), Ernakulam, Muvattupuzha, KL",
+   "India"
+  ],
+  [
+   "S1-164069089",
+   "Unique Business Private Limited",
+   "410 Kirti Shikhar-Iidistrict Centre Janakpuri, Delhi, West Delhi, Delhi",
+   "S3-501319659",
+   "यूनिक बिजनेस प्राइवेट लिमिटेड",
+   "Door No 1-410 Kirti Shikhar-iidistrict Centre Janakpuri, Delhi, West Delhi, दिल्ली",
+   "India"
+  ],
+  [
+   "S1-964727147",
+   "Lotus Pioneer Technologies Private Limited",
+   "A65, Hanumatkheda, Coral, Park Ladpura, Kota, Rajasthan",
+   "S3-875244657",
+   "Evonovi",
+   "Kota, Rajasthan, Kota, A65, Hanumatkheda, Coral, Park Ladpura",
+   "India"
+  ],
+  [
+   "S1-291600438",
+   "Ace Trading Pvt Ltd",
+   "Sri Ranga, 1St Floor, New No.151, (Old No.34), Mambalam High Road, T.Nagar, Chennai, Tamil Nadu",
+   "S2-130161833",
+   "ஏஸ் டிரேடிங் பிரைவேட் லிமிடெட்",
+   "SRI RANGA, CHENNAI CITY REGION, CHENNAI, Tamil Nadu",
+   "India"
+  ],
+  [
+   "S1-380837070",
+   "Om It Private Limited",
+   "Plot No. K-131/1 & K-131/2, Midc Industrial Area, Waluj, Aurangabad, Maharashtra",
+   "S3-209370787",
+   "ॐ आईटी प्राइवेट लिमिटेड",
+   "Plot No. K-131/1 & K-131/2, Midc Industrial Area, Waluj, Aurangabad, MH",
+   "India"
+  ],
+  [
+   "S1-579973843",
+   "Peterson & Shipp Australia Inc.",
+   "15612 Overmead Circle, Dallas, TX",
+   "S2-368476936",
+   "petersonshipp.com",
+   "0015612 OVERMEAD CIRCLE, DALLAS, TX",
+   "US"
+  ],
+  [
+   "S1-400692730",
+   "Papagena Coleman Invest LLC",
+   "OH, Galion, 1435 Walnut Road",
+   "S2-106862536",
+   "papagenacolemaninvest.com",
+   "1435 WALNUT RD, PO BOX 8167, GALION, OH",
+   "US"
+  ],
+  [
+   "S1-751769497",
+   "South Software Private Limited",
+   "B-14 Kirti Shikhar Towerdistt Centre, Janakpuri, New Delhi, Delhi",
+   "S2-50502540",
+   "साउथ सॉफ्टवेयर प्राइवेट लिमिटेड",
+   "BLOCK A-882 B-14 KIRTI SHIKHAR TOWERDISTT CENTRE, NEW DELHI, JANAKPURI, Delhi",
+   "India"
+  ],
+  [
+   "S1-252572820",
+   "Buneex Corp",
+   "2015 Ute Street, Tulsa, OK",
+   "S2-530850625",
+   "Viozeta",
+   "2015 UTE ST, TULSA CITY, OK",
+   "US"
+  ]
+ ]
+}

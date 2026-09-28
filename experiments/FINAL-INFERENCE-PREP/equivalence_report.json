@@ -1,0 +1,21 @@
+{
+  "validation_entities_tested": 1000,
+  "candidate_id_mismatches": 0,
+  "candidate_order_mismatches": 0,
+  "formula2_score_mismatches": 0,
+  "max_formula2_score_difference": 0.0,
+  "feature_value_mismatches": 0,
+  "max_feature_value_difference": 0.0,
+  "probability_mismatches": 0,
+  "max_probability_difference": 0.0,
+  "threshold_decision_mismatches": 0,
+  "final_predicted_link_mismatches": 0,
+  "equivalence_result": "PASS",
+  "timing": {
+    "baseline_seconds": 48.22,
+    "optimized_seconds": 42.54,
+    "speedup": 1.13,
+    "baseline_s1_per_sec": 20.74,
+    "optimized_s1_per_sec": 23.51
+  }
+}

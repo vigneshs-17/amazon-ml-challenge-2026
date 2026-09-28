@@ -1,0 +1,22 @@
+{
+  "experiment_id": "EXP-003.6",
+  "control_macro_f05": 0.9153,
+  "best_variant": "V2_Tolerant_Numeric",
+  "best_macro_f05": 0.91815,
+  "macro_f05_gain": 0.00285,
+  "meets_promotion_threshold": false,
+  "promotion_decision": "NO",
+  "rationale": "Variant V2_Tolerant_Numeric achieved Macro F0.5 = 0.91815 (++0.00285 vs control 0.91530) with precision 0.95742.",
+  "frozen_configuration": {
+    "candidate_generator": "B5 Blocker (rare-name + rare-address union with soft country fallback)",
+    "candidate_ranking": "Formula 2 (logarithmic token-IDF + postal code agreement + cross-field corroboration)",
+    "candidate_cap": 200,
+    "features": "Features V2 + Tolerant Numeric (47)",
+    "feature_count": 47,
+    "training_distribution": "Formula 2 bounded hard negatives",
+    "model": "HistGradientBoostingClassifier(max_leaf_nodes=127, min_samples_leaf=20, max_iter=150, l2_regularization=2.0)",
+    "threshold": 0.83,
+    "conflict_resolution": "Unique-owner greedy assignment"
+  },
+  "next_direction_if_no_promotion": "RAW RETRIEVAL"
+}

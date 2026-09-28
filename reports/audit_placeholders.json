@@ -1,0 +1,564 @@
+{
+ "train_s1": {
+  "rows": 2206821,
+  "name_null_placeholder": 0,
+  "name_city_name_placeholder": 116,
+  "name_any_angle_bracket_tag": 116,
+  "name_distinct_tag_variants": 1,
+  "name_top_tag_variants": [
+   [
+    "<CITY_NAME>",
+    116
+   ]
+  ],
+  "name_mojibake_rows": 0,
+  "name_mojibake_examples": [],
+  "address_null_placeholder": 0,
+  "address_city_name_placeholder": 0,
+  "address_any_angle_bracket_tag": 5,
+  "address_distinct_tag_variants": 1,
+  "address_top_tag_variants": [
+   [
+    "<1-98/9/3/31>",
+    1
+   ]
+  ],
+  "address_mojibake_rows": 539,
+  "address_mojibake_examples": [
+   "A-212, Malhotra Complex, Gali No. Â 01, Vikas Marg, Shakarpur, Laxmi Nagar, East Delhi, Delhi",
+   "C 12/27 ÂA & C 12/28, Lahangpura Aurangabad, Varanasi, Uttar Pradesh",
+   "Hyderabad, VspâS Bhavana Surovar, Madhavapuri, Hill Flat No.101, First Floor, Pjr Enclave, Ch, Andanagar, Hyderabad, Plot No.277, Telangana",
+   "14/2, Burdwan Road, Sidhartha Apartment, 6Th Floor, Block Â B, Flat No. 6C (4), Kolkata, Kolkata, Howrah, West Bengal",
+   "8-2-293/82/J/B/87/A, Plot Â B, Journalists Colony, Jubilee Hills, Hyderabad, Telangana",
+   "Survey No. 343P, Sanand-Bavla State Highway, At Modasar, Ta Â Sanand, Sanand, Ahmedabad, Gujarat",
+   "ÂShubh-Aishwaryâ, Sector 75/1, Chintamani Chowk, Chintamani Colony B4, Walhekarwadi, Chin, Chwad, Pune, Maharashtra",
+   "Room No Â 107, 1St Floor, Pratap Bhawan, 5 Bahadur Shah Zafar Marg, New Delhi, South West Delhi, Delhi"
+  ],
+  "by_country": {
+   "US": {
+    "null_placeholder": 0,
+    "city_name_placeholder": 0,
+    "mojibake": 0
+   },
+   "India": {
+    "null_placeholder": 0,
+    "city_name_placeholder": 116,
+    "mojibake": 539
+   }
+  }
+ },
+ "train_s2": {
+  "rows": 5034616,
+  "name_null_placeholder": 0,
+  "name_city_name_placeholder": 220,
+  "name_any_angle_bracket_tag": 225,
+  "name_distinct_tag_variants": 4,
+  "name_top_tag_variants": [
+   [
+    "<CITY_NAME>",
+    220
+   ],
+   [
+    "<ClTY_NAME>",
+    3
+   ],
+   [
+    "<CIT_NAME>",
+    1
+   ],
+   [
+    "<CITY_iNAME>",
+    1
+   ]
+  ],
+  "name_mojibake_rows": 0,
+  "name_mojibake_examples": [],
+  "address_null_placeholder": 0,
+  "address_city_name_placeholder": 0,
+  "address_any_angle_bracket_tag": 43810,
+  "address_distinct_tag_variants": 2,
+  "address_top_tag_variants": [
+   [
+    "<NULL>",
+    43799
+   ],
+   [
+    "<1-98/9/3/31>",
+    3
+   ]
+  ],
+  "address_mojibake_rows": 1118,
+  "address_mojibake_examples": [
+   "A/195., PEOPLEÂS CO-OPERATIVE COLONY, KANKARBAGH, PATNA, Bihar",
+   "CSN 326/A, B-1 ÂO4 TAKSHSHILA, NEW SHAHUPURI, KARVEER, KOLHAPUR, Maharashtra",
+   "NO 041 C/O YAWAR MAZHAR, MOHALLA Â DHARAMPUR NEW COLONY, WARD NO. 03, SAMASTIPUR, Bihar",
+   "B-1, BLDG NOÂ1, WING-A, NEW INDIA CHAMBERS, VLG MULGAON, MIDC ROAD, BHD ONIDA HOUSE, AND, HERI EAST, MUMBAI, NULL, Maharashtra",
+   "Tamil Nadu, MODULE NO.1205, 12TH FLOOR, TICEL BIOPARK LIMITED PHASE ÂII, NO.5, CSIR CAMPUS ROAD, TAR, AMANI, CHENNAI",
+   "MAFATLAL CENTRE, 11TH FLOOR, NARIMAN POINT, MUMBAI Â 400 021, MUMBAI CITY, MUMBAI, Maharashtra",
+   "OFFICE NO.D Â 414, NAVI MUMBAI, KARANJA, Maharashtra",
+   "Gujarat, #56 C/O MARUTI TRADERS, GIDC 2, PLOT NO 60, ARAMBHDA VILL Â ARAMBHADA, TAL Â OKHAMANDAL, ARAMBHDA"
+  ],
+  "by_country": {
+   "India": {
+    "null_placeholder": 0,
+    "city_name_placeholder": 220,
+    "mojibake": 1118
+   },
+   "US": {
+    "null_placeholder": 0,
+    "city_name_placeholder": 0,
+    "mojibake": 0
+   }
+  }
+ },
+ "train_s3": {
+  "rows": 5285603,
+  "name_null_placeholder": 0,
+  "name_city_name_placeholder": 248,
+  "name_any_angle_bracket_tag": 255,
+  "name_distinct_tag_variants": 4,
+  "name_top_tag_variants": [
+   [
+    "<CITY_NAME>",
+    251
+   ],
+   [
+    "<ClTY_NAME>",
+    5
+   ],
+   [
+    "<CITY_MNAE>",
+    1
+   ],
+   [
+    "<Clty_name>",
+    1
+   ]
+  ],
+  "name_mojibake_rows": 0,
+  "name_mojibake_examples": [],
+  "address_null_placeholder": 0,
+  "address_city_name_placeholder": 0,
+  "address_any_angle_bracket_tag": 43583,
+  "address_distinct_tag_variants": 2,
+  "address_top_tag_variants": [
+   [
+    "<NULL>",
+    43572
+   ],
+   [
+    "<1-98/9/3/31>",
+    1
+   ]
+  ],
+  "address_mojibake_rows": 949,
+  "address_mojibake_examples": [
+   "Plot 416 Shop Â 484, Mumbai, Mumbai City, MH",
+   "Vayu Â 616, Sy.no 79, Ele Room Â I, Near Hitech City, Madhapur, Hyderabad, Rangareddy, TG",
+   "Hn 301 A Â 204, Thaltej, <NULL>, GJ",
+   "Fourth Floor No.2651, 2 Nd Cross, 15 Th Main, Âeâ Block, Sahakar Nagar, Bangalore, KA",
+   "House No. G-183, Ground Floor, Blockâa, Metro Vihar Phase Â 1, Village & Post Office Holambi, Kalan, North West Delhi, North Delhi, DL",
+   "Cts No14985, Plot No. 140A Iiând Floor, Sindhi Colony, Jalna Road, Aurangabad, महाराष्ट्र",
+   "Swiss County, Flat No. Â 601, S. No. - 37, G-1, Near Pcmc School, Thergaon, Pune, Maharashtra",
+   "Cts 628 A/5 J.m Road, Bhosale Shinde Arcade, Sânagar, Pune, MH"
+  ],
+  "by_country": {
+   "US": {
+    "null_placeholder": 0,
+    "city_name_placeholder": 0,
+    "mojibake": 0
+   },
+   "India": {
+    "null_placeholder": 0,
+    "city_name_placeholder": 248,
+    "mojibake": 949
+   }
+  }
+ },
+ "test_s1": {
+  "rows": 1732544,
+  "name_null_placeholder": 0,
+  "name_city_name_placeholder": 108,
+  "name_any_angle_bracket_tag": 137,
+  "name_distinct_tag_variants": 1,
+  "name_top_tag_variants": [
+   [
+    "<CITY_NAME>",
+    108
+   ]
+  ],
+  "name_mojibake_rows": 2,
+  "name_mojibake_examples": [
+   "Daide & Frères SARL",
+   "Daccueil Ecole SARL"
+  ],
+  "address_null_placeholder": 0,
+  "address_city_name_placeholder": 0,
+  "address_any_angle_bracket_tag": 6,
+  "address_distinct_tag_variants": 1,
+  "address_top_tag_variants": [
+   [
+    "<< Elisabeth >",
+    1
+   ]
+  ],
+  "address_mojibake_rows": 457,
+  "address_mojibake_examples": [
+   "#302 ChallaâS Janakiram Residency, 1-65/14/6/14, Guttala Begumpet, Serilingamaplly, Madha, Pur, Hyderabad, Rangareddy, Telangana",
+   "B Â 59, Midc, Ph 1, Dombivali, Thane, Maharashtra",
+   "Shop-F22, Xth Central Mall, Mahavir Nagar, Sector 10, Next To DâMart, Kandivali Wes, T, Mumbai, Mumbai City, Maharashtra",
+   "Gn-26, Sector Â V, Salt Lake., Kolkata, Parganas North, West Bengal",
+   "Anmol Apartment Flat No. 301, Jalaram Â 1, University Road, Rajkot, Gujarat",
+   "West Delhi, Delhi, Hâ140 First Floor Karampura, New Delhi",
+   "Infinity It Lagoon, 9Th Floor, 904A, Plot E2-2/1 Block- Ep & Gp, Sector Â V, Salt Lake, Kolkata, Parganas North, West Bengal",
+   "Unit No. 1C, 2Nd Floor Carnival Inforpark Phase Â1, Kakkanad, Ernakulam, Kerala"
+  ],
+  "by_country": {
+   "US": {
+    "null_placeholder": 0,
+    "city_name_placeholder": 0,
+    "mojibake": 0
+   },
+   "France": {
+    "null_placeholder": 0,
+    "city_name_placeholder": 0,
+    "mojibake": 2
+   },
+   "India": {
+    "null_placeholder": 0,
+    "city_name_placeholder": 108,
+    "mojibake": 457
+   }
+  }
+ },
+ "test_s2": {
+  "rows": 4887273,
+  "name_null_placeholder": 0,
+  "name_city_name_placeholder": 297,
+  "name_any_angle_bracket_tag": 384,
+  "name_distinct_tag_variants": 4,
+  "name_top_tag_variants": [
+   [
+    "<CITY_NAME>",
+    302
+   ],
+   [
+    "<ClTY_NAME>",
+    5
+   ],
+   [
+    "<CLTY_NAME>",
+    1
+   ],
+   [
+    "<CBI_YNOME>",
+    1
+   ]
+  ],
+  "name_mojibake_rows": 2,
+  "name_mojibake_examples": [
+   "Daccueil École SARL",
+   "Daccueil Ecole Distribution SARL"
+  ],
+  "address_null_placeholder": 0,
+  "address_city_name_placeholder": 0,
+  "address_any_angle_bracket_tag": 35039,
+  "address_distinct_tag_variants": 2,
+  "address_top_tag_variants": [
+   [
+    "<NULL>",
+    35024
+   ],
+   [
+    "<< ELISABETH >",
+    2
+   ]
+  ],
+  "address_mojibake_rows": 1185,
+  "address_mojibake_examples": [
+   "NEAR JAGAT DARSHAN SOCIETY, KADI KALOL ROAD, VILLAGE-KADI, TALUKA-KADI, DISTRICT Â MA, HESANA, MAHESANA, Gujarat",
+   "C-#45, KAILASH APPARTMENTS, LALA LAJPAT RAI MARG, KAILASH COLONY, GREATER KAILASH ÂI, NEW DELHI, GURGAON, Delhi",
+   "243, SECOND FLOOR, BLOCK Â EF, JOYOS HUB TOWN, ADAJAN, SURAT, null, ગુજરાત",
+   "C/0095-99, SECOND FLOOR, LAJPAT NAGAR Â II, NEW DELHI, दिल्ली",
+   "PLOT NO. C 36 Â 42, FOCAL POINT, MANDI GOBINDGARH, Punjab",
+   "C/O ATUL MITTAL, 1001, NDM Â 1, NETAJI SUBHASH PLACE, NEW DELHI, Delhi",
+   "B. NO. X Â A-60 G10, GREEN GARDEN ROAD POICHIRA, KAKKANAD, ERNAKULAM, Kerala",
+   "BAGAMANE HERMITAGE, NO.22/12, 3RD FLOOR DÂSOUZA LAYOUT, VITTAL MALLYA ROAD, BANGALORE, ಕರ್ನಾಟಕ"
+  ],
+  "by_country": {
+   "India": {
+    "null_placeholder": 0,
+    "city_name_placeholder": 297,
+    "mojibake": 1185
+   },
+   "France": {
+    "null_placeholder": 0,
+    "city_name_placeholder": 0,
+    "mojibake": 2
+   },
+   "US": {
+    "null_placeholder": 0,
+    "city_name_placeholder": 0,
+    "mojibake": 0
+   }
+  }
+ },
+ "test_s3": {
+  "rows": 5082316,
+  "name_null_placeholder": 0,
+  "name_city_name_placeholder": 288,
+  "name_any_angle_bracket_tag": 378,
+  "name_distinct_tag_variants": 8,
+  "name_top_tag_variants": [
+   [
+    "<CITY_NAME>",
+    292
+   ],
+   [
+    "<ClTY_NAME>",
+    12
+   ],
+   [
+    "<Icity_nem>",
+    1
+   ],
+   [
+    "<CTIY_NAMEn>",
+    1
+   ],
+   [
+    "<fITY_NAME>",
+    1
+   ],
+   [
+    "<CITY_NbE>",
+    1
+   ],
+   [
+    "<CÍTY_NAME>",
+    1
+   ],
+   [
+    "<CcaTY_NAE>",
+    1
+   ]
+  ],
+  "name_mojibake_rows": 5,
+  "name_mojibake_examples": [
+   "Daccueil SARL Cie",
+   "Daide & Frères SNC",
+   "DACCUEIL ECOLE SAS",
+   "Daccueil Ecel SARL",
+   "daide & frères international sarl"
+  ],
+  "address_null_placeholder": 0,
+  "address_city_name_placeholder": 0,
+  "address_any_angle_bracket_tag": 35166,
+  "address_distinct_tag_variants": 2,
+  "address_top_tag_variants": [
+   [
+    "<NULL>",
+    35153
+   ],
+   [
+    "<< Elisabeth >",
+    4
+   ]
+  ],
+  "address_mojibake_rows": 1017,
+  "address_mojibake_examples": [
+   "14/28, Sector Â 14 Indira Nagar, Uko, Lucknow, UP",
+   "H.no 0083 Jamdheeh Pandey Post Â Labnapar, Basti, UP",
+   "Lane No. 1, At Âshriwardha Tal Shriwardhan Dist Ârai Sriwardhan, Raigad, Raigarh, महाराष्ट्र",
+   "Plot No.-14, (ÂGokulâ Bungalow) Girija Housing Soc, Old Mit College Road, Kothrud, Pune, MH",
+   "M-126, Floor Â Mezzfl, 15A/15B, Supariwala Estate Tata Road No. 2, Roxy Cinema Opera House, Girgaon, Girgaon, MH",
+   "Hn 727 B Â 1005, Mumbai, Mumbai City, MH",
+   "G-31/833, No:iii/223 Pr Â 11(1), 4Th Floor, Door No: D1 V Square It Hub, Pulikillam West Road, C, Hembumukku, Ernakulam, Keralam",
+   "No. Hig Â 1017, 5Th Street, Mogappair Eri Scheme, Chennai, தமிழ்நாடு"
+  ],
+  "by_country": {
+   "India": {
+    "null_placeholder": 0,
+    "city_name_placeholder": 288,
+    "mojibake": 1017
+   },
+   "France": {
+    "null_placeholder": 0,
+    "city_name_placeholder": 0,
+    "mojibake": 5
+   },
+   "US": {
+    "null_placeholder": 0,
+    "city_name_placeholder": 0,
+    "mojibake": 0
+   }
+  }
+ },
+ "positive_pairs_with_placeholder_on_either_side": 63592,
+ "positive_pairs_total": 7638365,
+ "positive_pairs_with_mojibake": 1877,
+ "placeholder_pair_examples": [
+  [
+   "S1-145361722",
+   "Dick Regional Armada Corp",
+   "33466 Warwick Hills Road, Yucaipa, CA",
+   "S2-939389287",
+   "Dick Regional Armada",
+   "33466 WARWICK HILLS ROAD, <NULL>, YUCAIPA, CA"
+  ],
+  [
+   "S1-894049089",
+   "Swastik Marketing",
+   "1301, 13Th Floor, Peninsula Business Park, Tower B, Senapatibapat Marg, Lower Parel, (West), Mumbai, Mumbai City, Maharashtra",
+   "S3-841264731",
+   "Swastik Marketing Corp",
+   "1301, <NULL>, Bombay, Mumbai City, MH"
+  ],
+  [
+   "S1-894049089",
+   "Swastik Marketing",
+   "1301, 13Th Floor, Peninsula Business Park, Tower B, Senapatibapat Marg, Lower Parel, (West), Mumbai, Mumbai City, Maharashtra",
+   "S3-892940011",
+   "Swastik Marketing",
+   "1301, <NULL>, Bombay, Mumbai City, महाराष्ट्र"
+  ],
+  [
+   "S1-251124112",
+   "Dunkle and Caffee",
+   "500 Peconic Street, Unit Apartment 237A, Islip, NY",
+   "S3-529853039",
+   "Dunkle and Ctrfe",
+   "500 Peconic Saint, <NULL>, Islip, New York"
+  ],
+  [
+   "S1-281088937",
+   "Britton Empire Lease, LLC",
+   "5328 85th Avenue, Unit B8, Hyattsville, MD",
+   "S3-188494008",
+   "Britton Empire Lease,",
+   "5328-5332 85th Avenue, <NULL>, Hyattsville, Maryland"
+  ],
+  [
+   "S1-804036808",
+   "Ram Projects Private Limited",
+   "Khet No. 250 Mauja Vajidp, Nada Paragana Tehsil Kol, Aligarh, Uttar Pradesh",
+   "S2-887593036",
+   "राम प्रोजेक्ट्स प्राइवेट लिमिटेड",
+   "ALIGARH, <NULL>, KHET NO. 250 MAUJA VAJIDP, ALIGARH, उत्तर प्रदेश"
+  ],
+  [
+   "S1-414440524",
+   "Lumis Dollar LLC",
+   "4780 Kempsville Greens Parkway, Virginia Beach City, VA",
+   "S3-15852224",
+   "L.L.C. Lumis Dollar",
+   "4780 Kempsville Greens Parkway, <NULL>, Virginia Beach City, Virginia"
+  ],
+  [
+   "S1-414440524",
+   "Lumis Dollar LLC",
+   "4780 Kempsville Greens Parkway, Virginia Beach City, VA",
+   "S3-500027332",
+   "Lumis Dóllar",
+   "4780 Kempsville Greens Pkwy, <NULL>, Virginia Beach City, Virginia"
+  ],
+  [
+   "S1-414440524",
+   "Lumis Dollar LLC",
+   "4780 Kempsville Greens Parkway, Virginia Beach City, VA",
+   "S3-526807850",
+   "Lumis-Dollar LLC",
+   "4780 Kempsville Greens Parkway, <NULL>, Virginia Beach City, Virginia"
+  ],
+  [
+   "S1-883281842",
+   "Style Multi Pvt. Ltd.",
+   "105, Park Street, R, Kolkata, Kolkata, Howrah, West Bengal",
+   "S3-271888732",
+   "Style Multi",
+   "পশ্চিমবঙ্গ, Kolkata, 105, Howrah, <NULL>"
+  ]
+ ],
+ "mojibake_pair_examples": [
+  [
+   "S1-874440306",
+   "Rrm Management Ltd",
+   "No. 28, ÂSinghvi Houseâ V S Raju Road, R V Layout, Bengaluru, Bangalore, Karnataka",
+   "S2-335539757",
+   "Rrm Mangdemoent Ltd",
+   "Karnataka, NO. 28, ÂSINGHVI HOUSEÂ V S RAJU ROAD, R V LAYOUT, BENGALURU"
+  ],
+  [
+   "S1-874440306",
+   "Rrm Management Ltd",
+   "No. 28, ÂSinghvi Houseâ V S Raju Road, R V Layout, Bengaluru, Bangalore, Karnataka",
+   "S3-400590710",
+   "Rrm Management Limited",
+   "No. 028, Bengaluru, Bangalore, KA"
+  ],
+  [
+   "S1-728953505",
+   "Primera Trading Private Limited",
+   "Second Floor, Plot No.6, ÂFâ Block, TvdâS Srishti United Colony 2Nd Street, Medawakkam, Chennai, Tamil Nadu",
+   "S2-493513986",
+   "Primera Private Limited Center",
+   "SECOND FLOOR, PLOT NO.6, ÂFÂ BLOCK, TVDÂS SRISHTI UNITED COLONY 2ND STREET, MEDAWAKKAM, CHENNAI, தமிழ்நாடு"
+  ],
+  [
+   "S1-728953505",
+   "Primera Trading Private Limited",
+   "Second Floor, Plot No.6, ÂFâ Block, TvdâS Srishti United Colony 2Nd Street, Medawakkam, Chennai, Tamil Nadu",
+   "S3-568668731",
+   "Primera Trading Private Ltd",
+   "No 510 Second Floor, Chennai, Kanchipuram, TN"
+  ],
+  [
+   "S1-728953505",
+   "Primera Trading Private Limited",
+   "Second Floor, Plot No.6, ÂFâ Block, TvdâS Srishti United Colony 2Nd Street, Medawakkam, Chennai, Tamil Nadu",
+   "S3-264046999",
+   "Primera  Trading",
+   "Madras, H.no 510 Second Floor, Kanchipuram, TN, Plot No.6, Âfâ Block, Tvdâs Srishti United Colony 2Nd Street, Medawakkam"
+  ],
+  [
+   "S1-319307000",
+   "Mumbai Farmer Co",
+   "Maharashtra, 5Th Floor, AliâS Chambers, Near Air Cargo Complex, Sahar, Mumbai, Office No. 503, Mumbai City",
+   "S2-823944463",
+   "Mumbai Fiagmfr Co",
+   "OFFICE NO. ##503, 5TH FLOOR, ALIÂS CHAMBERS, NEAR AIR CARGO COMPLEX, SAHAR, MUMBAI, महाराष्ट्र"
+  ],
+  [
+   "S1-319307000",
+   "Mumbai Farmer Co",
+   "Maharashtra, 5Th Floor, AliâS Chambers, Near Air Cargo Complex, Sahar, Mumbai, Office No. 503, Mumbai City",
+   "S2-647211983",
+   "VERAKORCIRA",
+   "OFFICE NO. ##503, MUMBAI CITY, ANDHERI WEH, महाराष्ट्र"
+  ],
+  [
+   "S1-319307000",
+   "Mumbai Farmer Co",
+   "Maharashtra, 5Th Floor, AliâS Chambers, Near Air Cargo Complex, Sahar, Mumbai, Office No. 503, Mumbai City",
+   "S3-403399680",
+   "Mumbai Farmer Company",
+   "Office No. 503, 5Th Floor, Aliâs Chambers, Near Air Cargo Complex, Sahar, Mumbai City, MH"
+  ],
+  [
+   "S1-140360286",
+   "Hotel Exim Private Limited",
+   "Sf No. 106Â 2A1; 2A2; 1B; 1C, Na Kamandoddi Cross Dasanapuram Village, Doripalli Post, Hosur, Krishnagiri, Krishnagiri, Dharmapuri, Tamil Nadu",
+   "S2-365806385",
+   "H0tel Exim Private Limited",
+   "SF NO. 106Â 2A1; 2A2; 1B; 1C, NA KAMANDODDI CROSS DASANAPURAM VILLAGE, DORIPALLI POST, HOSUR, KRISHNAGIRI, KRISHNAGIRI, DHARMAPURI, தமிழ்நாடு"
+  ],
+  [
+   "S1-140360286",
+   "Hotel Exim Private Limited",
+   "Sf No. 106Â 2A1; 2A2; 1B; 1C, Na Kamandoddi Cross Dasanapuram Village, Doripalli Post, Hosur, Krishnagiri, Krishnagiri, Dharmapuri, Tamil Nadu",
+   "S2-918469657",
+   "Hotel Exrim Private Limited",
+   ""
+  ]
+ ]
+}

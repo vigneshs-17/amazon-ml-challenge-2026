@@ -1,0 +1,379 @@
+{
+ "s1_rows": 2206821,
+ "s23_rows": 10320219,
+ "naive_all_pairs": 22774876013799,
+ "truth_pairs_total": 7638365,
+ "exact_name_with_country": {
+  "candidates_per_s1": {
+   "mean": 11.06,
+   "median": 2,
+   "p90": 18,
+   "p95": 69,
+   "p99": 191,
+   "max": 1071
+  },
+  "pct_s1_zero_candidates": 24.889,
+  "total_candidate_pairs": 24402891,
+  "candidate_reduction_ratio_vs_naive": 0.999999,
+  "pairwise_recall_pct": 25.787,
+  "seconds": 53.0
+ },
+ "exact_addr_with_country": {
+  "candidates_per_s1": {
+   "mean": 0.35,
+   "median": 0,
+   "p90": 1,
+   "p95": 2,
+   "p99": 3,
+   "max": 20
+  },
+  "pct_s1_zero_candidates": 75.847,
+  "total_candidate_pairs": 769811,
+  "candidate_reduction_ratio_vs_naive": 1.0,
+  "pairwise_recall_pct": 8.266,
+  "seconds": 58.8
+ },
+ "exact_name_without_country": {
+  "candidates_per_s1": {
+   "mean": 11.1,
+   "median": 2,
+   "p90": 18,
+   "p95": 69,
+   "p99": 191,
+   "max": 1071
+  },
+  "pct_s1_zero_candidates": 24.873,
+  "total_candidate_pairs": 24486061,
+  "candidate_reduction_ratio_vs_naive": 0.999999,
+  "pairwise_recall_pct": 25.787,
+  "seconds": 24.5
+ },
+ "exact_addr_without_country": {
+  "candidates_per_s1": {
+   "mean": 0.35,
+   "median": 0,
+   "p90": 1,
+   "p95": 2,
+   "p99": 3,
+   "max": 20
+  },
+  "pct_s1_zero_candidates": 75.847,
+  "total_candidate_pairs": 769811,
+  "candidate_reduction_ratio_vs_naive": 1.0,
+  "pairwise_recall_pct": 8.266,
+  "seconds": 25.8
+ },
+ "name_prefix4_with_country": {
+  "candidates_per_s1": {
+   "mean": 6911.86,
+   "median": 2804,
+   "p90": 19116,
+   "p95": 21684,
+   "p99": 56005,
+   "max": 89430
+  },
+  "pct_s1_zero_candidates": 0.068,
+  "total_candidate_pairs": 15253245032,
+  "candidate_reduction_ratio_vs_naive": 0.99933,
+  "pairwise_recall_pct": 76.494,
+  "seconds": 22.1
+ },
+ "name_prefix4_without_country": {
+  "candidates_per_s1": {
+   "mean": 8818.08,
+   "median": 3825,
+   "p90": 22433,
+   "p95": 30662,
+   "p99": 62111,
+   "max": 89518
+  },
+  "pct_s1_zero_candidates": 0.046,
+  "total_candidate_pairs": 19459922613,
+  "candidate_reduction_ratio_vs_naive": 0.999146,
+  "pairwise_recall_pct": 76.494,
+  "seconds": 15.9
+ },
+ "top_common_name_tokens_by_df": [
+  [
+   "limited",
+   1236140
+  ],
+  [
+   "private",
+   1197662
+  ],
+  [
+   "llc",
+   1099665
+  ],
+  [
+   "inc",
+   846952
+  ],
+  [
+   "ltd",
+   826245
+  ],
+  [
+   "center",
+   424349
+  ],
+  [
+   "com",
+   412660
+  ],
+  [
+   "pvt",
+   409623
+  ],
+  [
+   "partners",
+   320743
+  ],
+  [
+   "services",
+   318499
+  ],
+  [
+   "\u0932\u093f\u092e\u093f\u091f\u0947\u0921",
+   296635
+  ],
+  [
+   "group",
+   289405
+  ],
+  [
+   "co",
+   288523
+  ],
+  [
+   "corp",
+   286686
+  ],
+  [
+   "s",
+   285950
+  ],
+  [
+   "and",
+   246773
+  ],
+  [
+   "\u092a\u094d\u0930\u093e\u0907\u0935\u0947\u091f",
+   246472
+  ],
+  [
+   "india",
+   229501
+  ],
+  [
+   "c",
+   226413
+  ],
+  [
+   "holdings",
+   197901
+  ],
+  [
+   "care",
+   190666
+  ],
+  [
+   "l",
+   183580
+  ],
+  [
+   "of",
+   183296
+  ],
+  [
+   "associates",
+   155438
+  ],
+  [
+   "llp",
+   141798
+  ],
+  [
+   "corporation",
+   123557
+  ],
+  [
+   "service",
+   121514
+  ],
+  [
+   "p",
+   114408
+  ],
+  [
+   "health",
+   108480
+  ],
+  [
+   "enterprises",
+   108317
+  ]
+ ],
+ "top_common_addr_tokens_by_df": [
+  [
+   "no",
+   1827811
+  ],
+  [
+   "road",
+   1288416
+  ],
+  [
+   "street",
+   694453
+  ],
+  [
+   "new",
+   677211
+  ],
+  [
+   "st",
+   664919
+  ],
+  [
+   "rd",
+   657196
+  ],
+  [
+   "city",
+   650527
+  ],
+  [
+   "floor",
+   597331
+  ],
+  [
+   "1",
+   591145
+  ],
+  [
+   "dr",
+   565124
+  ],
+  [
+   "nagar",
+   554771
+  ],
+  [
+   "a",
+   535886
+  ],
+  [
+   "delhi",
+   535355
+  ],
+  [
+   "c",
+   514333
+  ],
+  [
+   "2",
+   466660
+  ],
+  [
+   "drive",
+   457748
+  ],
+  [
+   "ave",
+   448290
+  ],
+  [
+   "avenue",
+   405843
+  ],
+  [
+   "north",
+   399761
+  ],
+  [
+   "west",
+   392303
+  ],
+  [
+   "b",
+   371233
+  ],
+  [
+   "h",
+   370266
+  ],
+  [
+   "mumbai",
+   360513
+  ],
+  [
+   "maharashtra",
+   343014
+  ],
+  [
+   "plot",
+   341980
+  ],
+  [
+   "mh",
+   320041
+  ],
+  [
+   "o",
+   308343
+  ],
+  [
+   "tx",
+   307571
+  ],
+  [
+   "texas",
+   294859
+  ],
+  [
+   "null",
+   262638
+  ]
+ ],
+ "name_token_df_distribution": {
+  "0.5": 1.0,
+  "0.9": 3.0,
+  "0.99": 139.0,
+  "0.999": 2029.0,
+  "1.0": 1236140.0
+ },
+ "rarest1_name_with_country": {
+  "candidates_per_s1": {
+   "mean": 5001.15,
+   "median": 1095,
+   "p90": 13769,
+   "p95": 22039,
+   "p99": 30224,
+   "max": 229501
+  },
+  "pct_s1_zero_candidates": 0.004,
+  "total_candidate_pairs": 11036638853,
+  "candidate_reduction_ratio_vs_naive": 0.999515,
+  "pairwise_recall_pct": 78.642,
+  "distinct_tokens_indexed": 108505,
+  "seconds": 2140.1
+ },
+ "rarest1_name_without_country": {
+  "candidates_per_s1": {
+   "mean": 6731.27,
+   "median": 1566,
+   "p90": 22872,
+   "p95": 29133,
+   "p99": 43009,
+   "max": 1099665
+  },
+  "pct_s1_zero_candidates": 0.003,
+  "total_candidate_pairs": 14854704541,
+  "candidate_reduction_ratio_vs_naive": 0.999348,
+  "pairwise_recall_pct": 78.689,
+  "distinct_tokens_indexed": 108528,
+  "seconds": 2796.8
+ }
+}

@@ -1,0 +1,44 @@
+{
+  "benchmark_sample_size": 1000,
+  "total_test_population": 1732544,
+  "one_time_setup": {
+    "load_seconds": 11.23,
+    "index_build_seconds": 202.8,
+    "idf_build_seconds": 0.82,
+    "setup_total_seconds": 214.86,
+    "setup_total_minutes": 3.58
+  },
+  "per_s1_runtime_breakdown": {
+    "4_retrieval_seconds": 1.178,
+    "4_retrieval_pct": 2.44,
+    "5_ranking_seconds": 28.073,
+    "5_ranking_pct": 58.05,
+    "6_features_seconds": 13.826,
+    "6_features_pct": 28.59,
+    "7_scoring_seconds": 5.273,
+    "7_scoring_pct": 10.9,
+    "8_conflict_resolution_seconds": 0.0021,
+    "8_conflict_resolution_pct": 0.0,
+    "9_serialization_seconds": 0.0078,
+    "9_serialization_pct": 0.02,
+    "total_scoring_seconds_1k": 48.36
+  },
+  "primary_bottleneck": "Formula-2 Candidate Ranking",
+  "throughput": {
+    "s1_per_second": 20.67,
+    "pairs_per_second": 3831.2,
+    "avg_candidates_per_s1": 5403.71,
+    "avg_top200_pairs_per_s1": 185.34,
+    "p95_raw_candidates_per_s1": 17891.2,
+    "p95_top200_pairs_per_s1": 200.0
+  },
+  "memory": {
+    "working_set_mb": 16746.3,
+    "peak_mb": 17380.0
+  },
+  "extrapolation_full_test_1732544_s1": {
+    "setup_hours": 0.06,
+    "scoring_hours": 23.28,
+    "total_estimated_hours": 23.34
+  }
+}

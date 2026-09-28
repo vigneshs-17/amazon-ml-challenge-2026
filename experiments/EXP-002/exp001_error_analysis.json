@@ -1,0 +1,922 @@
+{
+  "sample_size_s1": 10000,
+  "threshold": 0.9,
+  "counts": {
+    "TP": 26103,
+    "FN": 5383,
+    "FP": 1689,
+    "TN": 50000
+  },
+  "distributions": {
+    "name_ratio": {
+      "TP": {
+        "mean": 84.484,
+        "median": 90.0,
+        "p25": 77.419,
+        "p75": 100.0
+      },
+      "FN": {
+        "mean": 65.183,
+        "median": 76.056,
+        "p25": 47.059,
+        "p75": 88.889
+      },
+      "FP": {
+        "mean": 73.382,
+        "median": 78.261,
+        "p25": 66.667,
+        "p75": 86.364
+      },
+      "TN": {
+        "mean": 52.441,
+        "median": 53.571,
+        "p25": 40.0,
+        "p75": 65.625
+      }
+    },
+    "name_token_set_ratio": {
+      "TP": {
+        "mean": 91.817,
+        "median": 100.0,
+        "p25": 92.857,
+        "p75": 100.0
+      },
+      "FN": {
+        "mean": 72.812,
+        "median": 89.286,
+        "p25": 48.835,
+        "p75": 100.0
+      },
+      "FP": {
+        "mean": 85.941,
+        "median": 90.141,
+        "p25": 85.714,
+        "p75": 100.0
+      },
+      "TN": {
+        "mean": 59.155,
+        "median": 61.017,
+        "p25": 44.444,
+        "p75": 77.333
+      }
+    },
+    "addr_ratio": {
+      "TP": {
+        "mean": 79.919,
+        "median": 85.161,
+        "p25": 72.072,
+        "p75": 92.958
+      },
+      "FN": {
+        "mean": 71.171,
+        "median": 79.167,
+        "p25": 61.111,
+        "p75": 88.889
+      },
+      "FP": {
+        "mean": 17.051,
+        "median": 0.0,
+        "p25": 0.0,
+        "p75": 0.0
+      },
+      "TN": {
+        "mean": 45.28,
+        "median": 41.892,
+        "p25": 36.242,
+        "p75": 52.632
+      }
+    },
+    "addr_token_set_ratio": {
+      "TP": {
+        "mean": 91.164,
+        "median": 94.737,
+        "p25": 88.312,
+        "p75": 100.0
+      },
+      "FN": {
+        "mean": 82.293,
+        "median": 90.323,
+        "p25": 81.25,
+        "p75": 96.0
+      },
+      "FP": {
+        "mean": 20.828,
+        "median": 0.0,
+        "p25": 0.0,
+        "p75": 0.0
+      },
+      "TN": {
+        "mean": 53.263,
+        "median": 48.387,
+        "p25": 40.506,
+        "p75": 64.0
+      }
+    },
+    "name_tok_jaccard": {
+      "TP": {
+        "mean": 0.702,
+        "median": 0.75,
+        "p25": 0.5,
+        "p75": 1.0
+      },
+      "FN": {
+        "mean": 0.462,
+        "median": 0.5,
+        "p25": 0.0,
+        "p75": 0.667
+      },
+      "FP": {
+        "mean": 0.552,
+        "median": 0.6,
+        "p25": 0.5,
+        "p75": 0.667
+      },
+      "TN": {
+        "mean": 0.256,
+        "median": 0.2,
+        "p25": 0.125,
+        "p75": 0.4
+      }
+    },
+    "addr_tok_jaccard": {
+      "TP": {
+        "mean": 0.659,
+        "median": 0.667,
+        "p25": 0.5,
+        "p75": 0.833
+      },
+      "FN": {
+        "mean": 0.524,
+        "median": 0.5,
+        "p25": 0.333,
+        "p75": 0.722
+      },
+      "FP": {
+        "mean": 0.139,
+        "median": 0.0,
+        "p25": 0.0,
+        "p75": 0.0
+      },
+      "TN": {
+        "mean": 0.157,
+        "median": 0.115,
+        "p25": 0.056,
+        "p75": 0.214
+      }
+    },
+    "name_shared_count": {
+      "TP": {
+        "mean": 2.767,
+        "median": 3.0,
+        "p25": 2.0,
+        "p75": 4.0
+      },
+      "FN": {
+        "mean": 2.002,
+        "median": 2.0,
+        "p25": 0.0,
+        "p75": 3.0
+      },
+      "FP": {
+        "mean": 2.51,
+        "median": 3.0,
+        "p25": 2.0,
+        "p75": 3.0
+      },
+      "TN": {
+        "mean": 1.477,
+        "median": 1.0,
+        "p25": 1.0,
+        "p75": 2.0
+      }
+    },
+    "addr_shared_count": {
+      "TP": {
+        "mean": 6.243,
+        "median": 5.0,
+        "p25": 4.0,
+        "p75": 8.0
+      },
+      "FN": {
+        "mean": 5.952,
+        "median": 5.0,
+        "p25": 3.0,
+        "p75": 9.0
+      },
+      "FP": {
+        "mean": 1.454,
+        "median": 0.0,
+        "p25": 0.0,
+        "p75": 0.0
+      },
+      "TN": {
+        "mean": 2.891,
+        "median": 2.0,
+        "p25": 1.0,
+        "p75": 4.0
+      }
+    },
+    "name_min_shared_df": {
+      "TP": {
+        "mean": 7849.741,
+        "median": 487.0,
+        "p25": 72.0,
+        "p75": 8265.0
+      },
+      "FN": {
+        "mean": 15220.469,
+        "median": 187.0,
+        "p25": 0.0,
+        "p75": 5952.0
+      },
+      "FP": {
+        "mean": 5151.59,
+        "median": 282.0,
+        "p25": 121.0,
+        "p75": 2154.0
+      },
+      "TN": {
+        "mean": 182314.383,
+        "median": 8607.0,
+        "p25": 95.0,
+        "p75": 31502.0
+      }
+    },
+    "addr_min_shared_df": {
+      "TP": {
+        "mean": 1840.962,
+        "median": 239.0,
+        "p25": 34.0,
+        "p75": 990.0
+      },
+      "FN": {
+        "mean": 4049.746,
+        "median": 227.0,
+        "p25": 23.0,
+        "p75": 1118.5
+      },
+      "FP": {
+        "mean": 2925.349,
+        "median": 0.0,
+        "p25": 0.0,
+        "p75": 0.0
+      },
+      "TN": {
+        "mean": 155830.557,
+        "median": 5527.0,
+        "p25": 307.0,
+        "p75": 126113.0
+      }
+    },
+    "rank": {
+      "TP": {
+        "mean": 5.145,
+        "median": 2.0,
+        "p25": 1.0,
+        "p75": 4.0
+      },
+      "FN": {
+        "mean": 15.313,
+        "median": 4.0,
+        "p25": 3.0,
+        "p75": 9.0
+      },
+      "FP": {
+        "mean": 79.757,
+        "median": 68.0,
+        "p25": 23.0,
+        "p75": 134.0
+      },
+      "TN": {
+        "mean": 96.37,
+        "median": 94.0,
+        "p25": 46.0,
+        "p75": 146.0
+      }
+    },
+    "prob": {
+      "TP": {
+        "mean": 0.988,
+        "median": 0.996,
+        "p25": 0.986,
+        "p75": 0.999
+      },
+      "FN": {
+        "mean": 0.601,
+        "median": 0.67,
+        "p25": 0.419,
+        "p75": 0.826
+      },
+      "FP": {
+        "mean": 0.945,
+        "median": 0.947,
+        "p25": 0.927,
+        "p75": 0.964
+      },
+      "TN": {
+        "mean": 0.013,
+        "median": 0.001,
+        "p25": 0.001,
+        "p75": 0.003
+      }
+    }
+  },
+  "proportions": {
+    "script_mismatch": {
+      "TP": 0.0229,
+      "FN": 0.0648,
+      "FP": 0.0361,
+      "TN": 0.0368
+    },
+    "zero_shared_name": {
+      "TP": 0.0947,
+      "FN": 0.2623,
+      "FP": 0.0799,
+      "TN": 0.2173
+    },
+    "zero_shared_addr": {
+      "TP": 0.0148,
+      "FN": 0.0711,
+      "FP": 0.7709,
+      "TN": 0.1147
+    },
+    "num_conflict": {
+      "TP": 0.0371,
+      "FN": 0.2134,
+      "FP": 0.0213,
+      "TN": 0.4849
+    },
+    "source_s2_pct": {
+      "TP": 0.4806,
+      "FN": 0.4795,
+      "FP": 0.5104,
+      "TN": 0.5265
+    }
+  },
+  "sample_examples": {
+    "FN": [
+      {
+        "s1_id": "S1-766767883",
+        "s1_name": "eastern one infra pvt ltd",
+        "s1_addr": "shop no 8 9 mangal bhavan 14th khar pali road khar west mumbai maharashtra",
+        "cand_id": "S2-352752580",
+        "cand_name": "\u0908\u0938\u094d\u091f\u0930\u094d\u0928 \u0935\u0928 \u0907\u0902\u092b\u094d\u0930\u093e \u092a\u094d\u0930\u093e \u0932\u093f",
+        "cand_addr": "mumbai maharashtra khar west shop no 8 9 mangal bhavan 14th khar pali road",
+        "prob": 0.8379,
+        "rank": 1,
+        "name_ratio": 16.000000000000004,
+        "name_token_set_ratio": 16.0,
+        "addr_ratio": 60.810810810810814,
+        "addr_token_set_ratio": 100.0
+      },
+      {
+        "s1_id": "S1-211233587",
+        "s1_name": "raj software pvt ltd",
+        "s1_addr": "101 century arcade narangi baug road near boat club pune maharashtra",
+        "cand_id": "S3-765120228",
+        "cand_name": "raj software pvt limited",
+        "cand_addr": "101 pune \u092e\u0939\u093e\u0930\u093e\u0937\u094d\u091f\u094d\u0930 pune dhole patil road",
+        "prob": 0.1495,
+        "rank": 5,
+        "name_ratio": 90.9090909090909,
+        "name_token_set_ratio": 90.9090909090909,
+        "addr_ratio": 36.69724770642202,
+        "addr_token_set_ratio": 53.06122448979592
+      },
+      {
+        "s1_id": "S1-370628597",
+        "s1_name": "gsv energy private limited",
+        "s1_addr": "no 9 1 kno 132 gulmohar layout bangalore karnataka",
+        "cand_id": "S2-199365364",
+        "cand_name": "gsv energy private",
+        "cand_addr": "karnataka no 4 9 1 kno 132 gulmohar layout bangalore",
+        "prob": 0.8357,
+        "rank": 1,
+        "name_ratio": 81.81818181818181,
+        "name_token_set_ratio": 100.0,
+        "addr_ratio": 78.43137254901961,
+        "addr_token_set_ratio": 100.0
+      },
+      {
+        "s1_id": "S1-188623590",
+        "s1_name": "dwarkesh securities private limited",
+        "s1_addr": "455 a road cross road no 11 kathwada gidc ahmedabad gujarat",
+        "cand_id": "S2-803656080",
+        "cand_name": "dwarkesh securities pfriae limited id 14300",
+        "cand_addr": "55 a road cross road no 11 kathwada gidc gujarat",
+        "prob": 0.1223,
+        "rank": 1,
+        "name_ratio": 84.61538461538461,
+        "name_token_set_ratio": 87.09677419354838,
+        "addr_ratio": 89.7196261682243,
+        "addr_token_set_ratio": 96.3855421686747
+      },
+      {
+        "s1_id": "S1-261068698",
+        "s1_name": "grh social private limited",
+        "s1_addr": "37 tilak nagar aishbagh lucknow uttar pradesh",
+        "cand_id": "S2-235670522",
+        "cand_name": "grh social pbave limited",
+        "cand_addr": "uttar pradesh 037 tilak nagar aishbagh lucknow",
+        "prob": 0.8592,
+        "rank": 3,
+        "name_ratio": 88.0,
+        "name_token_set_ratio": 88.0,
+        "addr_ratio": 68.13186813186813,
+        "addr_token_set_ratio": 98.9010989010989
+      },
+      {
+        "s1_id": "S1-224107999",
+        "s1_name": "yamuin state private limited",
+        "s1_addr": "c o shakuntala devi garha katra shankargarh bara allahabad uttar pradesh",
+        "cand_id": "S2-564146359",
+        "cand_name": "yamuin state private ltd",
+        "cand_addr": "h no 89 c o shakuntala devi garha katra shankargarh bara uttar pradesh",
+        "prob": 0.8633,
+        "rank": 1,
+        "name_ratio": 92.3076923076923,
+        "name_token_set_ratio": 92.3076923076923,
+        "addr_ratio": 87.32394366197182,
+        "addr_token_set_ratio": 93.93939393939394
+      },
+      {
+        "s1_id": "S1-590543234",
+        "s1_name": "digital life properties llp",
+        "s1_addr": "h no 8 1139 parijat colony ring road ambejogai beed maharashtra",
+        "cand_id": "S2-67703915",
+        "cand_name": "\u0921\u093f\u091c\u093f\u091f\u0932 \u0932\u093e\u0907\u092b \u092a\u094d\u0930\u0949\u092a\u0930\u094d\u091f\u0940\u091c \u090f\u0932\u090f\u0932\u092a\u0940",
+        "cand_addr": "8 1139 beed ambejogai \u092e\u0939\u093e\u0930\u093e\u0937\u094d\u091f\u094d\u0930",
+        "prob": 0.8264,
+        "rank": 28,
+        "name_ratio": 10.71428571428571,
+        "name_token_set_ratio": 10.714285714285708,
+        "addr_ratio": 40.0,
+        "addr_token_set_ratio": 79.24528301886792
+      },
+      {
+        "s1_id": "S1-234690388",
+        "s1_name": "jai power pvt ltd",
+        "s1_addr": "villa no 22 mayflower royale woods coimbatore south coimbatore tamil nadu",
+        "cand_id": "S3-191981721",
+        "cand_name": "m s jai pvt ltd partners",
+        "cand_addr": "villa no 022 mayflower royale woods vedapatti coimbatore south tn",
+        "prob": 0.0665,
+        "rank": 132,
+        "name_ratio": 53.65853658536586,
+        "name_token_set_ratio": 78.57142857142857,
+        "addr_ratio": 78.26086956521739,
+        "addr_token_set_ratio": 88.18897637795276
+      },
+      {
+        "s1_id": "S1-343823727",
+        "s1_name": "una foundation",
+        "s1_addr": "194 ground floor pocket o sector 1 dsiidc bawana delhi north west delhi",
+        "cand_id": "S2-57634098",
+        "cand_name": "una foundation corp",
+        "cand_addr": "999 194 ground floor pocket o sector 1 dsiidc bawana delhi delhi",
+        "prob": 0.8637,
+        "rank": 1,
+        "name_ratio": 84.84848484848484,
+        "name_token_set_ratio": 100.0,
+        "addr_ratio": 88.88888888888889,
+        "addr_token_set_ratio": 96.42857142857143
+      },
+      {
+        "s1_id": "S1-133186493",
+        "s1_name": "bharat services private limited",
+        "s1_addr": "flat no 601 kedarnath towers off yari road versova andheri w mumbai mumbai city maharashtra",
+        "cand_id": "S3-217936295",
+        "cand_name": "sri bharat services limited services",
+        "cand_addr": "flat no 01 mumbai mumbai city mh",
+        "prob": 0.3923,
+        "rank": 90,
+        "name_ratio": 68.65671641791045,
+        "name_token_set_ratio": 92.0,
+        "addr_ratio": 52.032520325203244,
+        "addr_token_set_ratio": 86.36363636363636
+      },
+      {
+        "s1_id": "S1-317377377",
+        "s1_name": "hriday transports limited",
+        "s1_addr": "17 178 kuthiranghatil house pallarmangalam palappuram po ottapalam palakkad kerala",
+        "cand_id": "S2-814078592",
+        "cand_name": "hriday transports limited",
+        "cand_addr": "",
+        "prob": 0.8599,
+        "rank": 12,
+        "name_ratio": 100.0,
+        "name_token_set_ratio": 100.0,
+        "addr_ratio": 0.0,
+        "addr_token_set_ratio": 0.0
+      },
+      {
+        "s1_id": "S1-135451354",
+        "s1_name": "utkarsh brothers private limited",
+        "s1_addr": "no 720 a 6 9th cross 11th main hal ii stage bangalore north bangalore karnataka",
+        "cand_id": "S2-682028721",
+        "cand_name": "utkarsh brothers private",
+        "cand_addr": "no 20 a 6 9th cross 11th main hal ii stage bangalore north karnataka",
+        "prob": 0.4612,
+        "rank": 2,
+        "name_ratio": 85.71428571428572,
+        "name_token_set_ratio": 100.0,
+        "addr_ratio": 92.51700680272108,
+        "addr_token_set_ratio": 99.27007299270073
+      },
+      {
+        "s1_id": "S1-118803671",
+        "s1_name": "india out consulting center",
+        "s1_addr": "54a k k t street 3rd floor room no 30 kolkata kolkata howrah west bengal",
+        "cand_id": "S3-956689029",
+        "cand_name": "india out consulting center corporation",
+        "cand_addr": "54a k k t street 3rd floor kolkata howrah \u09aa\u09b6\u09cd\u099a\u09bf\u09ae\u09ac\u0999\u09cd\u0997",
+        "prob": 0.6023,
+        "rank": 2,
+        "name_ratio": 81.81818181818181,
+        "name_token_set_ratio": 100.0,
+        "addr_ratio": 67.74193548387098,
+        "addr_token_set_ratio": 87.64044943820224
+      },
+      {
+        "s1_id": "S1-839213710",
+        "s1_name": "nagpur coaching private limited",
+        "s1_addr": "2nd floor gajanan bhavan near tulsi park wadi bypass road katol naka nagpur maharashtra",
+        "cand_id": "S3-869466296",
+        "cand_name": "viogildbelo",
+        "cand_addr": "no 2nd floor gajanan bhavan near tulsi park wadi bypass road katol naka nagpur mh",
+        "prob": 0.3831,
+        "rank": 1,
+        "name_ratio": 23.809523809523814,
+        "name_token_set_ratio": 23.80952380952381,
+        "addr_ratio": 92.85714285714286,
+        "addr_token_set_ratio": 96.15384615384616
+      },
+      {
+        "s1_id": "S1-336446535",
+        "s1_name": "international silver finance private limited",
+        "s1_addr": "5 19 41b guntur ground floor balakuteer school road 2 17 brodipeta andhra pradesh",
+        "cand_id": "S3-622743191",
+        "cand_name": "international silver finance limited center",
+        "cand_addr": "19 41b guntur \u0c06\u0c02\u0c27\u0c4d\u0c30\u0c2a\u0c4d\u0c30\u0c26\u0c47\u0c36\u0c4d",
+        "prob": 0.6789,
+        "rank": 4,
+        "name_ratio": 82.75862068965517,
+        "name_token_set_ratio": 91.13924050632912,
+        "addr_ratio": 26.16822429906542,
+        "addr_token_set_ratio": 66.66666666666666
+      },
+      {
+        "s1_id": "S1-451545683",
+        "s1_name": "shakti products pvt ltd",
+        "s1_addr": "c o abhinash kumar vill sehuka dla sehuka kapanch sehuka block ramgarh mohania kaimur bhabua bihar",
+        "cand_id": "S3-13408084",
+        "cand_name": "shakti \u092a\u094d\u0930\u094b\u0921\u0915\u094d\u091f\u094d\u0938 \u092a\u094d\u0930\u093e \u0932\u093f",
+        "cand_addr": "c o abhinash kucar vill sehuka dla sehuka kapanch sehuka block ramgarh mohania kaimoor \u092c\u093f\u0939\u093e\u0930",
+        "prob": 0.8873,
+        "rank": 1,
+        "name_ratio": 37.5,
+        "name_token_set_ratio": 41.37931034482759,
+        "addr_ratio": 88.42105263157895,
+        "addr_token_set_ratio": 85.29411764705883
+      },
+      {
+        "s1_id": "S1-117712083",
+        "s1_name": "sree vijay construction private limited",
+        "s1_addr": "jhajjar khewat no 1358 1151 haryana jhajjar khatoni no 1461 main nh 9 near toll plaza rohad",
+        "cand_id": "S3-504772088",
+        "cand_name": "sree vijay construction",
+        "cand_addr": "khewat no 1358 1151 jhajjar \u0939\u0930\u093f\u092f\u093e\u0923\u093e",
+        "prob": 0.838,
+        "rank": 2,
+        "name_ratio": 74.19354838709677,
+        "name_token_set_ratio": 100.0,
+        "addr_ratio": 44.44444444444444,
+        "addr_token_set_ratio": 87.09677419354838
+      },
+      {
+        "s1_id": "S1-462055270",
+        "s1_name": "ace interiors private limited",
+        "s1_addr": "madhya pradesh bhopal arera colony bhopal e 3 290",
+        "cand_id": "S2-41400869",
+        "cand_name": "ace interiors private",
+        "cand_addr": "486 e 3 290 arera colony bhopal \u092e\u0927\u094d\u092f \u092a\u094d\u0930\u0926\u0947\u0936",
+        "prob": 0.88,
+        "rank": 1,
+        "name_ratio": 84.0,
+        "name_token_set_ratio": 100.0,
+        "addr_ratio": 54.347826086956516,
+        "addr_token_set_ratio": 78.26086956521739
+      },
+      {
+        "s1_id": "S1-268414656",
+        "s1_name": "new delhi india private limited",
+        "s1_addr": "15 66old rajinder nagar new delhi central delhi delhi",
+        "cand_id": "S2-684059424",
+        "cand_name": "new delhi india private ltd",
+        "cand_addr": "h no 1 5 66old rajinder nagar new dehi delhi",
+        "prob": 0.4575,
+        "rank": 1,
+        "name_ratio": 93.10344827586206,
+        "name_token_set_ratio": 93.10344827586206,
+        "addr_ratio": 78.35051546391753,
+        "addr_token_set_ratio": 84.70588235294117
+      },
+      {
+        "s1_id": "S1-244980407",
+        "s1_name": "jay products private limited",
+        "s1_addr": "part of land khewat 108 village mirka hisar haryana",
+        "cand_id": "S3-773437170",
+        "cand_name": "shri jay products private",
+        "cand_addr": "no 52 part of land khewat 108 village mirka hisar hr",
+        "prob": 0.707,
+        "rank": 1,
+        "name_ratio": 75.47169811320755,
+        "name_token_set_ratio": 88.88888888888889,
+        "addr_ratio": 89.32038834951457,
+        "addr_token_set_ratio": 91.48936170212767
+      }
+    ],
+    "FP": [
+      {
+        "s1_id": "S1-130148024",
+        "s1_name": "technologies avinash siddhivinayak private limited",
+        "s1_addr": "c o hanumanteshvar 2 744j ramjanki nagar gorakhpur gorakhpur uttar pradesh",
+        "cand_id": "S2-821678678",
+        "cand_name": "technologies avinash siddhivinayak group private limited",
+        "cand_addr": "door no 3 c o hanumanteshvar 2 744j ramjanki nagar gorakhpur gorakhpur uttar pradesh",
+        "prob": 0.9367,
+        "rank": 1,
+        "name_ratio": 94.33962264150944,
+        "name_token_set_ratio": 100.0,
+        "addr_ratio": 93.67088607594937,
+        "addr_token_set_ratio": 100.0
+      },
+      {
+        "s1_id": "S1-894728217",
+        "s1_name": "revan sangh",
+        "s1_addr": "howrah 60a bondel road kolkata west bengal",
+        "cand_id": "S2-228140852",
+        "cand_name": "smt revan sangh corp",
+        "cand_addr": "",
+        "prob": 0.973,
+        "rank": 164,
+        "name_ratio": 70.96774193548387,
+        "name_token_set_ratio": 100.0,
+        "addr_ratio": 0.0,
+        "addr_token_set_ratio": 0.0
+      },
+      {
+        "s1_id": "S1-120391211",
+        "s1_name": "vizag opticals private limited",
+        "s1_addr": "sri rahul tiwary s o shivanand tiwary house no 261 d p p colony sadakat ash ram patna bihar",
+        "cand_id": "S2-215613112",
+        "cand_name": "vizag opticals",
+        "cand_addr": "",
+        "prob": 0.9742,
+        "rank": 153,
+        "name_ratio": 63.63636363636363,
+        "name_token_set_ratio": 100.0,
+        "addr_ratio": 0.0,
+        "addr_token_set_ratio": 0.0
+      },
+      {
+        "s1_id": "S1-133895093",
+        "s1_name": "pune yarn pvt ltd",
+        "s1_addr": "flat number 102 arabella bella case mulshi taluka off sus road pune maharashtra",
+        "cand_id": "S2-410569146",
+        "cand_name": "yarn pvt ltd center",
+        "cand_addr": "",
+        "prob": 0.9115,
+        "rank": 36,
+        "name_ratio": 66.66666666666667,
+        "name_token_set_ratio": 83.33333333333333,
+        "addr_ratio": 0.0,
+        "addr_token_set_ratio": 0.0
+      },
+      {
+        "s1_id": "S1-561975198",
+        "s1_name": "services pathak david limited",
+        "s1_addr": "saptagiri automobiles opp ayyappa swamy temple adivarampeta palakonda road srikakulam andhra pradesh",
+        "cand_id": "S3-797552193",
+        "cand_name": "david services",
+        "cand_addr": "",
+        "prob": 0.9495,
+        "rank": 38,
+        "name_ratio": 37.2093023255814,
+        "name_token_set_ratio": 100.0,
+        "addr_ratio": 0.0,
+        "addr_token_set_ratio": 0.0
+      },
+      {
+        "s1_id": "S1-220807909",
+        "s1_name": "rpd foundation private limited",
+        "s1_addr": "survey no 17 3 b 1 csn 651 near suprime classic salunke vihar rd kondhwa kd pune maharashtra",
+        "cand_id": "S3-835530870",
+        "cand_name": "rpd solutions private limited",
+        "cand_addr": "",
+        "prob": 0.9444,
+        "rank": 34,
+        "name_ratio": 88.13559322033898,
+        "name_token_set_ratio": 88.13559322033899,
+        "addr_ratio": 0.0,
+        "addr_token_set_ratio": 0.0
+      },
+      {
+        "s1_id": "S1-101073839",
+        "s1_name": "scan institute of technology",
+        "s1_addr": "19 nizamuddin east new delhi new delhi delhi",
+        "cand_id": "S2-497503515",
+        "cand_name": "\u0917\u094d\u0930\u0947\u091f \u0938\u0949\u0932\u094d\u092f\u0942\u0936\u0902\u0938 \u092a\u094d\u0930\u093e\u0907\u0935\u0947\u091f \u0932\u093f\u092e\u093f\u091f\u0947\u0921",
+        "cand_addr": "c g 19 nizamuddin west new delhi new delhi delhi",
+        "prob": 0.9021,
+        "rank": 6,
+        "name_ratio": 9.999999999999998,
+        "name_token_set_ratio": 10.0,
+        "addr_ratio": 93.47826086956522,
+        "addr_token_set_ratio": 90.19607843137254
+      },
+      {
+        "s1_id": "S1-101073839",
+        "s1_name": "scan institute of technology",
+        "s1_addr": "19 nizamuddin east new delhi new delhi delhi",
+        "cand_id": "S2-649829162",
+        "cand_name": "\u0917\u094d\u0930\u0947\u091f \u0938\u0949\u0932\u094d\u092f\u0942\u0936\u0902\u0938 \u092a\u094d\u0930\u093e\u0907\u0935\u0947\u091f \u0932\u093f\u092e\u093f\u091f\u0947\u0921",
+        "cand_addr": "c g 19 delhi nizamuddin west new delhi new delhi",
+        "prob": 0.9021,
+        "rank": 7,
+        "name_ratio": 9.999999999999998,
+        "name_token_set_ratio": 10.0,
+        "addr_ratio": 80.43478260869566,
+        "addr_token_set_ratio": 90.19607843137254
+      },
+      {
+        "s1_id": "S1-101073839",
+        "s1_name": "scan institute of technology",
+        "s1_addr": "19 nizamuddin east new delhi new delhi delhi",
+        "cand_id": "S3-52624295",
+        "cand_name": "\u0917\u094d\u0930\u0947\u091f \u0938\u0949\u0932\u094d\u092f\u0942\u0936\u0902\u0938 \u092a\u094d\u0930\u093e\u0907\u0935\u0947\u091f \u0932\u093f\u092e\u093f\u091f\u0947\u0921",
+        "cand_addr": "c d 19 nizamuddin west new delhi n a dl",
+        "prob": 0.9068,
+        "rank": 12,
+        "name_ratio": 9.999999999999998,
+        "name_token_set_ratio": 10.0,
+        "addr_ratio": 79.51807228915662,
+        "addr_token_set_ratio": 90.19607843137254
+      },
+      {
+        "s1_id": "S1-717389670",
+        "s1_name": "navjivan institute of technology",
+        "s1_addr": "91 n s rd3rd fl kolkata calcutta west bengal",
+        "cand_id": "S3-579968167",
+        "cand_name": "navjivan institute of technology private",
+        "cand_addr": "",
+        "prob": 0.9458,
+        "rank": 74,
+        "name_ratio": 88.88888888888889,
+        "name_token_set_ratio": 100.0,
+        "addr_ratio": 0.0,
+        "addr_token_set_ratio": 0.0
+      },
+      {
+        "s1_id": "S1-388277582",
+        "s1_name": "te india private limited",
+        "s1_addr": "at chowki para jharsuguda sambalpur orissa",
+        "cand_id": "S3-184322434",
+        "cand_name": "te private limited service enterprises",
+        "cand_addr": "",
+        "prob": 0.9026,
+        "rank": 112,
+        "name_ratio": 58.06451612903225,
+        "name_token_set_ratio": 85.71428571428571,
+        "addr_ratio": 0.0,
+        "addr_token_set_ratio": 0.0
+      },
+      {
+        "s1_id": "S1-388277582",
+        "s1_name": "te india private limited",
+        "s1_addr": "at chowki para jharsuguda sambalpur orissa",
+        "cand_id": "S2-399979999",
+        "cand_name": "te private limited service",
+        "cand_addr": "",
+        "prob": 0.9343,
+        "rank": 125,
+        "name_ratio": 72.0,
+        "name_token_set_ratio": 85.71428571428571,
+        "addr_ratio": 0.0,
+        "addr_token_set_ratio": 0.0
+      },
+      {
+        "s1_id": "S1-919564753",
+        "s1_name": "chennai ventures private limited",
+        "s1_addr": "no 22 south boag road t nagar chennai tamil nadu",
+        "cand_id": "S2-5105634",
+        "cand_name": "chennai visa ventures private ltd",
+        "cand_addr": "no 22 first floor krishnabai road t nagar chennai tamil nadu",
+        "prob": 0.9507,
+        "rank": 1,
+        "name_ratio": 86.15384615384616,
+        "name_token_set_ratio": 86.15384615384616,
+        "addr_ratio": 79.62962962962963,
+        "addr_token_set_ratio": 87.05882352941177
+      },
+      {
+        "s1_id": "S1-602993063",
+        "s1_name": "panvel transcription limited",
+        "s1_addr": "house no 31a rajgad niwas kombad bhuje ulwe panvel raigarh maharashtra",
+        "cand_id": "S3-836526081",
+        "cand_name": "caplin transcription pvt limited",
+        "cand_addr": "",
+        "prob": 0.902,
+        "rank": 47,
+        "name_ratio": 80.0,
+        "name_token_set_ratio": 85.71428571428571,
+        "addr_ratio": 0.0,
+        "addr_token_set_ratio": 0.0
+      },
+      {
+        "s1_id": "S1-968741727",
+        "s1_name": "meentech trading limited",
+        "s1_addr": "s no 1676 aecs layout kundalahalli kalluri subba reddy bangalore karnataka",
+        "cand_id": "S2-42928897",
+        "cand_name": "meentech poultry poultry limited",
+        "cand_addr": "",
+        "prob": 0.9178,
+        "rank": 123,
+        "name_ratio": 67.85714285714286,
+        "name_token_set_ratio": 80.0,
+        "addr_ratio": 0.0,
+        "addr_token_set_ratio": 0.0
+      },
+      {
+        "s1_id": "S1-164865162",
+        "s1_name": "anant security pvt ltd",
+        "s1_addr": "25 27 ns rd kolkata calcutta west bengal",
+        "cand_id": "S3-970215324",
+        "cand_name": "anant ao pvt ltd",
+        "cand_addr": "",
+        "prob": 0.9443,
+        "rank": 142,
+        "name_ratio": 73.6842105263158,
+        "name_token_set_ratio": 89.65517241379311,
+        "addr_ratio": 0.0,
+        "addr_token_set_ratio": 0.0
+      },
+      {
+        "s1_id": "S1-242231647",
+        "s1_name": "narsinghpur india private limited",
+        "s1_addr": "b26 second floor dwarka expy sector 84 narsinghpur gurgaon haryana",
+        "cand_id": "S3-213882264",
+        "cand_name": "\u0930\u0947\u0921 \u091f\u094d\u0930\u0947\u0921\u093f\u0902\u0917 \u092a\u094d\u0930\u093e\u0907\u0935\u0947\u091f \u0932\u093f\u092e\u093f\u091f\u0947\u0921",
+        "cand_addr": "b26 second floor dwarka expy sector 84 narsinghpur gurgaon hr",
+        "prob": 0.9106,
+        "rank": 15,
+        "name_ratio": 9.677419354838712,
+        "name_token_set_ratio": 9.677419354838705,
+        "addr_ratio": 96.06299212598425,
+        "addr_token_set_ratio": 97.47899159663865
+      },
+      {
+        "s1_id": "S1-242231647",
+        "s1_name": "narsinghpur india private limited",
+        "s1_addr": "b26 second floor dwarka expy sector 84 narsinghpur gurgaon haryana",
+        "cand_id": "S3-111745376",
+        "cand_name": "\u092b\u0949\u0930\u094d\u091a\u094d\u092f\u0942\u0928 \u0938\u093f\u0938\u094d\u091f\u092e\u094d\u0938 \u092a\u094d\u0930\u093e\u0907\u0935\u0947\u091f \u0932\u093f\u092e\u093f\u091f\u0947\u0921",
+        "cand_addr": "b26 second floor dwarka expy sector 84 narsinghpur gurgaon hr",
+        "prob": 0.9451,
+        "rank": 16,
+        "name_ratio": 8.823529411764708,
+        "name_token_set_ratio": 8.82352941176471,
+        "addr_ratio": 96.06299212598425,
+        "addr_token_set_ratio": 97.47899159663865
+      },
+      {
+        "s1_id": "S1-242231647",
+        "s1_name": "narsinghpur india private limited",
+        "s1_addr": "b26 second floor dwarka expy sector 84 narsinghpur gurgaon haryana",
+        "cand_id": "S2-559881302",
+        "cand_name": "\u092b\u0949\u0930\u094d\u091a\u094d\u092f\u0942\u0928 \u0938\u093f\u0938\u094d\u091f\u092e\u094d\u0938 \u092a\u094d\u0930\u093e\u0907\u0935\u0947\u091f \u0932\u093f\u092e\u093f\u091f\u0947\u0921",
+        "cand_addr": "b26 narsinghpur gurgaon \u0939\u0930\u093f\u092f\u093e\u0923\u093e",
+        "prob": 0.9262,
+        "rank": 35,
+        "name_ratio": 8.823529411764708,
+        "name_token_set_ratio": 8.82352941176471,
+        "addr_ratio": 49.48453608247423,
+        "addr_token_set_ratio": 85.18518518518519
+      },
+      {
+        "s1_id": "S1-825881388",
+        "s1_name": "vinsan logistics private limited",
+        "s1_addr": "5 5 72 1 ghouse pura darusasalam namapally hyderabad telangana",
+        "cand_id": "S2-98735443",
+        "cand_name": "vinsan towers private limited",
+        "cand_addr": "",
+        "prob": 0.927,
+        "rank": 29,
+        "name_ratio": 81.9672131147541,
+        "name_token_set_ratio": 86.27450980392157,
+        "addr_ratio": 0.0,
+        "addr_token_set_ratio": 0.0
+      }
+    ]
+  }
+}

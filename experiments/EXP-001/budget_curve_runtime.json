@@ -1,0 +1,10 @@
+{
+  "setup_seconds": 252.9,
+  "evaluation_seconds": 3088.5,
+  "total_seconds": 3346.6,
+  "validation_s1_count": 100000,
+  "total_raw_candidates": 572746683,
+  "s1_per_sec": 32.4,
+  "candidates_per_sec": 185447.0,
+  "peak_ram_mb": 16927.0
+}

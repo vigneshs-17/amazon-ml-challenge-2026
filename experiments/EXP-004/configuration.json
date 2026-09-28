@@ -1,0 +1,14 @@
+{
+  "experiment_id": "EXP-004",
+  "description": "Full 100k confirmation of V2: Formula 2 Training + 47 Features (Tolerant Numeric/Postal) + Leafwise HGB",
+  "candidate_generator": "Deterministic Formula 2 B5 Blocker",
+  "candidate_cap": 200,
+  "training_candidate_generator": "Formula 2",
+  "training_s1": "100,000 stratified training S1 entities (Seed 2026)",
+  "features": "47 features (Features V2 [42] + 5 Tolerant Numeric/Postal features)",
+  "feature_count": 47,
+  "model": "HistGradientBoostingClassifier(max_depth=None, max_leaf_nodes=127, min_samples_leaf=20, max_iter=150, l2_regularization=2.0)",
+  "conflict_resolution": "Unique-owner greedy assignment",
+  "random_seed": 2026,
+  "validation_split": "100,000 S1 validation entities (345,938 ground-truth links)"
+}
