@@ -89,7 +89,7 @@ Raw Data
 [ Stage 2: Country-Aware B5 Blocker + Formula 2 Top-K Ranking ]
    │  (Generates ≤ 100 or ≤ 200 candidates per S1)
    ▼
-[ Stage 3: 47-Feature Pair Extraction + LightGBM/HGB Classifier ]
+[ Stage 3: 47-Feature Pair Extraction + HistGradientBoostingClassifier ]
    │  (Predicts match probability p ∈ [0, 1])
    ▼
 [ Stage 4: Threshold Filtering (0.82) + Unique-Owner Conflict Resolution ]
@@ -169,7 +169,7 @@ Because Source 2 and Source 3 entities represent physical commercial entities, n
 
 ## 11. Validation Strategy
 
-Validation was conducted using a strict **100,000 $S_1$ stratified split** held out from `train_source1.tsv` (Seed 2026):
+Validation was conducted using a strict **100,000 $S_1$ stratified split** held out from `train_source1.tsv` (split seed 42, `src/build_validation_split.py`):
 - Stratified by country (`US`, `India`) and match cardinality (singletons vs non-singletons).
 - 345,938 ground-truth matching links.
 - Evaluated with the official competition scoring formula (identical to the leaderboard engine).
@@ -216,7 +216,7 @@ Test S1 Entities (1,732,544)
 ## 14. Project Structure
 
 ```
-amazon_ml_challenge_2026/
+amazon-ml-challenge-2026/
 ├── README.md                      # Project documentation and reproduction guide
 ├── requirements.txt               # Pinned package dependencies
 ├── .gitignore                     # Git exclusion rules (raw data, caches, models)
@@ -255,8 +255,8 @@ amazon_ml_challenge_2026/
 
 ### Installation
 ```bash
-git clone https://github.com/your-org/amazon-ml-challenge-2026.git
-cd amazon_ml_challenge_2026
+git clone https://github.com/vigneshs-17/amazon-ml-challenge-2026.git
+cd amazon-ml-challenge-2026
 
 # Create virtual environment
 python -m venv .venv
@@ -298,7 +298,7 @@ python data/raw/student_resource/utils/validate_submission.py \
 ## 17. Reproducibility
 
 Every component of this solution is strictly deterministic:
-- Random seeds are pinned to `2026`.
+- Random seeds are pinned: `2026` for training-pair mining and the model, `42` for the validation split.
 - Ties in candidate ranking are broken deterministically by entity ID string sorting.
 - Feature extraction order and floating-point representations are strictly maintained.
 - Exact equivalence verified: 0 mismatches across 1,000 entity validation audits (`experiments/FINAL-INFERENCE-PREP/equivalence_report.json`).
