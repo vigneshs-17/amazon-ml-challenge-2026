@@ -36,7 +36,7 @@ A high-performance, production-grade machine learning solution for large-scale *
 
 ## 1. Overview
 
-In commercial platforms, business identity data originates from multiple disparate sources, each presenting partial, noisy fragments of real-world entities without unified keys or identifiers. This repository implements an end-to-end, reproducible Entity Resolution pipeline that links **1,732,544 test reference entities (Source 1)** against **9,970,219 candidate entities (Source 2 and Source 3)** across multiple countries (United States, India, and France).
+In commercial platforms, business identity data originates from multiple disparate sources, each presenting partial, noisy fragments of real-world entities without unified keys or identifiers. This repository implements an end-to-end, reproducible Entity Resolution pipeline that links **1,732,544 test reference entities (Source 1)** against **9,969,589 candidate entities (Source 2 and Source 3)** across multiple countries (United States, India, and France).
 
 Key highlights:
 - **Scalable Candidate Blocker (B5)**: Hybrid multi-key inverted index achieving **95.49% raw candidate recall** with a **99.998% search-space reduction**.
@@ -65,8 +65,8 @@ $$F_{0.5} = \frac{(1 + 0.5^2) \cdot \text{Precision} \cdot \text{Recall}}{0.5^2 
 
 | Dataset Split | Records ($S_1$) | Records ($S_2$) | Records ($S_3$) | Total Records | Countries |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Train** | 1,000,000 | 2,875,123 | 2,874,877 | 6,750,000 | US, India |
-| **Test** | 1,732,544 | 4,985,109 | 4,985,110 | 11,702,763 | US, India, France |
+| **Train** | 2,206,821 | 5,034,616 | 5,285,603 | 12,527,040 | US, India |
+| **Test** | 1,732,544 | 4,887,273 | 5,082,316 | 11,702,133 | US, India, France |
 
 Each record contains:
 - `entity_id`: Unique identifier prefixed with `S1-`, `S2-`, or `S3-`.
@@ -182,15 +182,15 @@ Validation was conducted using a strict **100,000 $S_1$ stratified split** held 
 
 | Configuration | Candidate Cap ($K$) | Macro $F_{0.5}$ | Macro Precision | Macro Recall | Singleton $F_{0.5}$ | Non-Singleton $F_{0.5}$ |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Baseline (EXP-001)** | 50 | 0.89120 | 0.93410 | 0.82104 | 0.91240 | 0.86940 |
-| **Features V2 (EXP-002)** | 100 | 0.90850 | 0.94820 | 0.83510 | 0.93120 | 0.88450 |
-| **Formula 2 (EXP-003)** | 200 | 0.91949 | 0.95821 | 0.84650 | 0.94180 | 0.89610 |
-| **EXP-004 (Champion)** | **200** | **0.92237** | **0.96012** | **0.85047** | **0.94420** | **0.89980** |
+| **Baseline (EXP-001)** | 200 | 0.85694 | 0.91360 | 0.76674 | 0.88628 | 0.85520 |
+| **Features V2 (EXP-002)** | 200 | 0.89927 | 0.94713 | 0.81287 | 0.92819 | 0.89756 |
+| **Formula 2 (EXP-003)** | 200 | 0.91894 | 0.95904 | 0.84260 | 0.94216 | 0.91757 |
+| **EXP-004 (Champion)** | **200** | **0.92237** | **0.96012** | **0.85047** | **0.94126** | **0.92125** |
 
 ### Execution Profiles
 
 - **Validation Champion (EXP-004, Cap-200)**: Macro $F_{0.5} = \mathbf{0.92237}$ on 100k entities.
-- **Deadline-Optimized Execution (Cap-100)**: Macro $F_{0.5} = 0.92028$ on 10k validation benchmark (a $-0.00209$ tradeoff accepted for a $2\times$ throughput boost).
+- **Deadline-Optimized Execution (Cap-100)**: Macro $F_{0.5} = 0.92028$ on a 10k validation benchmark (no committed artifact backs this figure; unverified) (a $-0.00209$ tradeoff accepted for a $2\times$ throughput boost).
 
 ---
 
