@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-A high-performance, production-grade machine learning solution for large-scale **multi-source business entity resolution (ER)** across noisy datasets. Designed and implemented for the **Amazon ML Challenge 2026**.
+A machine learning pipeline for large-scale **multi-source business entity resolution (ER)** across noisy datasets. Developed and benchmarked for the **Amazon ML Challenge 2026**.
 
 ---
 
@@ -39,12 +39,12 @@ A high-performance, production-grade machine learning solution for large-scale *
 In commercial platforms, business identity data originates from multiple disparate sources, each presenting partial, noisy fragments of real-world entities without unified keys or identifiers. This repository implements an end-to-end, reproducible Entity Resolution pipeline that links **1,732,544 test reference entities (Source 1)** against **9,969,589 candidate entities (Source 2 and Source 3)** across multiple countries (United States, India, and France).
 
 Key highlights:
-- **Scalable Candidate Blocker (B5)**: Hybrid multi-key inverted index achieving **95.49% raw candidate recall** with a **99.998% search-space reduction**.
-- **Deterministic Formula 2 Candidate Ranking**: Sublinear priority queue ranker scoring token-IDF overlap, exact string matches, and postal tokens.
+- **Candidate Blocker (B5)**: Hybrid multi-key inverted index achieving **95.49% raw candidate recall** (94.15% after top-200 capping) with a **99.998% search-space reduction** on validation data (`reports/FINAL_PIPELINE_PERFORMANCE.md`, `experiments/EXP-004/evaluation.json`).
+- **Deterministic Formula 2 Candidate Ranking**: Priority queue candidate ranker (`heapq.nlargest`) scoring token-IDF overlap, exact string matches, and postal tokens.
 - **47 Discriminative Features**: Granular string similarity, tolerant numeric/postal parsing, token overlap ratios, and length statistics.
-- **Histogram-based Gradient Boosting (HistGradientBoostingClassifier)**: Highly optimized leaf-wise decision trees trained on representative hard negative pairs.
+- **Histogram-based Gradient Boosting (HistGradientBoostingClassifier)**: Leaf-wise gradient-boosted decision trees (`HistGradientBoostingClassifier`, 127 max leaves, L2 regularization 2.0) trained on representative hard negative pairs.
 - **Global Greedy Unique-Owner Conflict Resolution**: Enforces 1-to-1 matching constraints on physical entities across sources.
-- **Parallel Chunked Resumable Architecture**: Zero-leakage country partitioning and atomic disk checkpointing capable of sustaining ~75 S1 entities/second.
+- **Parallel Chunked Resumable Architecture**: Country partitioning and atomic disk checkpointing benchmarked at 23.10 $S_1$ entities/second in single-process test benchmarks (~90 $S_1$/second projected with 4 parallel workers; see `reports/FINAL_PIPELINE_PERFORMANCE.md`).
 
 ---
 
@@ -125,7 +125,7 @@ We developed the **B5 Inverted-Index Blocker**:
 
 When candidate pools contain hundreds or thousands of candidate entities, ranking candidates efficiently prior to ML scoring is essential. We designed **Formula 2**:
 $$\text{Score}(S_1, C) = 15.0 \cdot \mathbb{I}_{\text{exact\_addr}} + 10.0 \cdot \mathbb{I}_{\text{exact\_name}} + \sum_{t \in N_1 \cap N_2} \text{IDF}_N(t) + \sum_{t \in A_1 \cap A_2} \text{IDF}_A(t) + 5.0 \cdot \mathbb{I}_{\text{shared\_postal}} + 4.0 \cdot \mathbb{I}_{\text{both\_overlap}} + 3.0 \cdot J_N + 3.0 \cdot J_A$$
-- Evaluated with a fast, zero-allocation C/heap priority queue (`heapq.nlargest`).
+- Evaluated with a priority queue (`heapq.nlargest`) selecting the top $K$ candidate entities.
 - Selects the top $K$ candidates ($K=200$ for validation champion; $K=100$ for deadline-optimized test execution).
 
 ---
@@ -207,9 +207,9 @@ Test S1 Entities (1,732,544)
             ├── Forward Worker (Chunks 0000 -> 0008)
             └── Reverse Worker (Chunks 0016 -> 0009)
 ```
-- **Total Concurrent RAM**: ~14.3 GB (comfortably inside 24 GB physical RAM, 0 MB disk swapping).
+- **Memory Profile**: Working set memory evaluated between 13.6 GB and 17.6 GB during benchmarking (`reports/FINAL_PIPELINE_PERFORMANCE.md`), designed to operate within 24 GB system RAM.
 - **Atomic Persistence**: Every 50,000-entity chunk writes to temporary disk storage and renames atomically upon verification.
-- **Resumability**: Interrupted runs detect finalized chunk manifests and resume instantly with zero duplicate work.
+- **Resumability**: Interrupted runs detect finalized chunk manifests and resume from the last completed chunk without duplicate computation.
 
 ---
 
@@ -250,7 +250,7 @@ amazon-ml-challenge-2026/
 
 ### Prerequisites
 - Python 3.10+ (tested on Python 3.14)
-- 16 GB+ RAM recommended (24 GB optimal for full 3-worker concurrency)
+- 16 GB+ RAM recommended (24 GB recommended for concurrent multi-worker execution)
 - Multi-core CPU (8+ cores recommended)
 
 ### Installation
